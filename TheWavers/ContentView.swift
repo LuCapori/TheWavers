@@ -7,18 +7,36 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct VerticalMaskedSliderView: View {
+    @State private var sliderValue: Double = 0
+    let maxValue: Double
+    
+    init(maxValue: Double) {
+        self.maxValue = maxValue
+    }
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            GeometryReader { geometry in
+                ZStack(alignment: .bottom) {
+                    
+                    Slider(value: self.$sliderValue, in: 0...self.maxValue)
+                        .rotationEffect(.degrees(-90))
+                    
+                }
+            }
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView: View {
+    var body: some View {
+        VerticalMaskedSliderView(maxValue: 100)
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
