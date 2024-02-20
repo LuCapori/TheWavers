@@ -12,19 +12,20 @@ struct ContentView: View {
     private var maxValue: CGFloat = 1
     
     var body: some View {
-        VStack(spacing: 50) {
+        VStack() {
             HStack {
+                Spacer()
                 CustomSlider(value: $value, maxValue: maxValue)
-                //Spacer()
+                Spacer()
             }
         }
-        //.padding(.horizontal, 20)
     }
 }
 
 struct CustomSlider: View {
     @Binding var value: CGFloat
     private var maxValue: CGFloat
+    private var size = UIScreen.main.bounds.height * 0.1
     
     init(value: Binding<CGFloat>, maxValue: CGFloat) {
         self._value = value
@@ -34,29 +35,30 @@ struct CustomSlider: View {
     var body: some View {
         GeometryReader { proxy in
             let offsets = calculateOffsets(proxy: proxy)
-            ZStack() {
-                Capsule()
-                    .fill(capsuleGradient)
-                    .frame(width: 30, height: value*proxy.size.height)
-                    .offset(offsets.capsuleOffset)
-                    .zIndex(0)
-                
-                Circle()
-                    .fill(circleColor)
-                    .frame(width: 30, height: 30)
-                    .offset(offsets.circleOffset)
-
-                    .zIndex(1)
-            }
-            .gesture(
-                DragGesture()
-                    .onChanged { gesture in
-                        updateValue(proxy: proxy, gesture: gesture)
-                    }
-            )
+                ZStack() {
+                    Capsule()
+                        .fill(capsuleGradient)
+                        .frame(width: size, height: size + (value * proxy.size.height))
+                        .offset(x: offsets.capsuleOffset.width, y: offsets.capsuleOffset.height-30)
+                        .zIndex(0)
+                    
+//                    Circle()
+//                        .fill(circleColor)
+//                        .frame(width: 40, height: 40)
+//                        .offset(offsets.circleOffset)
+//                        .zIndex(1)
+                }
+                .gesture(
+                    DragGesture()
+                        .onChanged { gesture in
+                            updateValue(proxy: proxy, gesture: gesture)
+                        }
+                )
+              
             
-        }.frame(width: 20, height: UIScreen.main.bounds.height * 0.80) // Modifica delle dimensioni del frame
-
+        }.frame(width: size, height: UIScreen.main.bounds.height * 0.75) // Modifica delle dimensioni del frame
+        
+        .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
     }
     
     private func calculateOffsets(proxy: GeometryProxy) -> (capsuleOffset: CGSize, circleOffset: CGSize) {
@@ -69,12 +71,12 @@ struct CustomSlider: View {
     }
     
     private var capsuleGradient: LinearGradient {
-        LinearGradient(gradient: Gradient(colors: [.blue, circleColor]), startPoint: .bottom, endPoint: .top)
+        LinearGradient(gradient: Gradient(colors: [.white, circleColor]), startPoint: .bottom, endPoint: .top)
     }
     
     private var circleColor: Color {
         let percent = value / maxValue
-        return Color.interpolate(from: .blue, to: .red, percent: percent)
+        return Color.interpolate(from: .white, to: .pink, percent: percent)
     }
     
     private func updateValue(proxy: GeometryProxy, gesture: DragGesture.Value) {
