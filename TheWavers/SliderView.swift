@@ -10,25 +10,53 @@ import SwiftUI
 struct ContentView: View {
     @State private var value: CGFloat = 0
     private var maxValue: CGFloat = 1
+    @State private var fatto: Bool = false
     
     var body: some View {
         VStack() {
+            Spacer()
+            ZStack{
+                Text("FORZA NAPOLI")
+                    .font(.title)
+                    .bold()
+                    .foregroundStyle(.blue)
+                    .opacity(value == 0 ? 1 : 0)
+                
+                Button("", systemImage: "chevron.forward.circle", action: {
+                    
+                })
+                .disabled(!fatto)
+                .opacity(value == 0 ? 0 : 1)
+                .font(.title)
+                .bold()
+ 
+            }
+            Spacer()
+
             HStack {
                 Spacer()
-                CustomSlider(value: $value, maxValue: maxValue)
+                CustomSlider(value: $value, fatto: $fatto, maxValue: maxValue)
                 Spacer()
             }
+            Spacer()
+            
         }
+        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.85)
+        .background(.black)
     }
 }
 
 struct CustomSlider: View {
     @Binding var value: CGFloat
+    @Binding var fatto: Bool
+
     private var maxValue: CGFloat
     private var size = UIScreen.main.bounds.height * 0.1
     
-    init(value: Binding<CGFloat>, maxValue: CGFloat) {
+    init(value: Binding<CGFloat>, fatto: Binding<Bool>, maxValue: CGFloat) {
         self._value = value
+        self._fatto = fatto
+
         self.maxValue = maxValue
     }
     
@@ -53,12 +81,19 @@ struct CustomSlider: View {
                         .onChanged { gesture in
                             updateValue(proxy: proxy, gesture: gesture)
                         }
+                        .onEnded{_ in 
+                            if value == 0{
+                                fatto = false
+                            }
+                            else {
+                                fatto = true
+                            }
+                        }
                 )
               
             
-        }.frame(width: size, height: UIScreen.main.bounds.height * 0.75) // Modifica delle dimensioni del frame
+        }.frame(width: size, height: UIScreen.main.bounds.height * 0.6) // Modifica delle dimensioni del frame
         
-        .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
     }
     
     private func calculateOffsets(proxy: GeometryProxy) -> (capsuleOffset: CGSize, circleOffset: CGSize) {
@@ -71,12 +106,12 @@ struct CustomSlider: View {
     }
     
     private var capsuleGradient: LinearGradient {
-        LinearGradient(gradient: Gradient(colors: [.white, circleColor]), startPoint: .bottom, endPoint: .top)
+        LinearGradient(gradient: Gradient(colors: [.blue, circleColor]), startPoint: .bottom, endPoint: .top)
     }
     
     private var circleColor: Color {
         let percent = value / maxValue
-        return Color.interpolate(from: .white, to: .pink, percent: percent)
+        return Color.interpolate(from: .blue, to: .pink, percent: percent)
     }
     
     private func updateValue(proxy: GeometryProxy, gesture: DragGesture.Value) {
