@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		6964A3062B835ED200A9BB69 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6964A3052B835ED200A9BB69 /* .gitignore */; };
 		69D4C8612B835D8B009A0B7C /* TheWaversApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4C8602B835D8B009A0B7C /* TheWaversApp.swift */; };
-		69D4C8632B835D8B009A0B7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4C8622B835D8B009A0B7C /* ContentView.swift */; };
+		69D4C8632B835D8B009A0B7C /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4C8622B835D8B009A0B7C /* SliderView.swift */; };
 		69D4C8652B835D8C009A0B7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D4C8642B835D8C009A0B7C /* Assets.xcassets */; };
 		69D4C8682B835D8C009A0B7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D4C8672B835D8C009A0B7C /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -18,7 +18,7 @@
 		6964A3052B835ED200A9BB69 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		69D4C85D2B835D8B009A0B7C /* TheWavers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheWavers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D4C8602B835D8B009A0B7C /* TheWaversApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheWaversApp.swift; sourceTree = "<group>"; };
-		69D4C8622B835D8B009A0B7C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		69D4C8622B835D8B009A0B7C /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 		69D4C8642B835D8C009A0B7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69D4C8672B835D8C009A0B7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -37,7 +37,7 @@
 		0A95169C2B836A1C0033C208 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				69D4C8622B835D8B009A0B7C /* ContentView.swift */,
+				69D4C8622B835D8B009A0B7C /* SliderView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -149,7 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69D4C8632B835D8B009A0B7C /* ContentView.swift in Sources */,
+				69D4C8632B835D8B009A0B7C /* SliderView.swift in Sources */,
 				69D4C8612B835D8B009A0B7C /* TheWaversApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
