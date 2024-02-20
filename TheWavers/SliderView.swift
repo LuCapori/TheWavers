@@ -7,55 +7,105 @@
 
 import SwiftUI
 
-struct VerticalMaskedSliderView: View {
-    @GestureState private var dragOffset: CGSize = .zero
-    @State private var sliderValue: CGFloat = 0
-    let maxScrollLimit: CGFloat = 550 // Limite massimo di scorrimento
+struct ContentView: View {
+    @State private var value: CGFloat = 1
+    private var maxValue: CGFloat = 10
     
     var body: some View {
-        GeometryReader { geometry in
-            VStack {
-                Spacer()
-                
-                NavigationView {
-                    VStack {
-                        Spacer()
-                            .frame(minHeight: (geometry.size.height - 100 - self.maxScrollLimit) / 2) // Spazio per centrare verticalmente
-                        
-                        RoundedRectangle(cornerRadius: 50)
-                            .frame(width: 100, height: 100)
-                            .foregroundColor(.black)
-                            .offset(y: max(-self.maxScrollLimit, min(0 + self.dragOffset.height, 0)) + (geometry.size.height - 100) / 2)
-                            .padding(.bottom, 100)
-                            .gesture(DragGesture()
-                                .updating(self.$dragOffset) { value, state, _ in
-                                    state = value.translation
-                                }
-                                .onEnded { value in
-                                    let newOffset = self.sliderValue + value.translation.height
-                                    self.sliderValue = min(max(-self.maxScrollLimit, newOffset), -50)
-                            })
-                        
-                        Spacer()
-                            .frame(minHeight: (geometry.size.height - 100 - self.maxScrollLimit) / 2) // Spazio per centrare verticalmente
-                    }
-                }
-                
+        VStack(spacing: 50) {
+            HStack {
+                CustomSlider(value: $value, maxValue: maxValue)
                 Spacer()
             }
-            .edgesIgnoringSafeArea(.all)
+        }
+        .padding(.horizontal, 20)
+    }
+}
+
+struct CustomSlider: View {
+    @Binding var value: CGFloat
+    private var maxValue: CGFloat
+    
+    init(value: Binding<CGFloat>, maxValue: CGFloat) {
+        self._value = value
+        self.maxValue = maxValue
+    }
+    
+    var body: some View {
+        GeometryReader { proxy in
+            let offsets = calculateOffsets(proxy: proxy)
+            ZStack(alignment: .leading) {
+                Capsule()
+                    .fill(capsuleGradient)
+                    .frame(width: 20, height: proxy.size.height)
+                    .offset(offsets.capsuleOffset)
+                    .gesture(
+                        DragGesture()
+                            .onChanged { gesture in
+                                updateValue(proxy: proxy, gesture: gesture)
+                            }
+                    )
+                    .zIndex(0)
+                
+                Circle()
+                    .fill(circleColor)
+                    .frame(width: 20, height: 20)
+                    .offset(offsets.circleOffset)
+                    .gesture(
+                        DragGesture()
+                            .onChanged { gesture in
+                                updateValue(proxy: proxy, gesture: gesture)
+                            }
+                    )
+                    .zIndex(1)
+            }
+            .frame(width: 20, height: UIScreen.main.bounds.height * 0.88, alignment: .leading) // Modifica delle dimensioni del frame
         }
     }
-}
-
-struct SliderView: View {
-    var body: some View {
-        VerticalMaskedSliderView()
+    
+    private func calculateOffsets(proxy: GeometryProxy) -> (capsuleOffset: CGSize, circleOffset: CGSize) {
+        let capsuleHeight = proxy.size.height
+        let sliderHeight = capsuleHeight / maxValue
+        let totalHeight = sliderHeight * value
+        let capsuleOffset = CGSize(width: 165, height: capsuleHeight - totalHeight)
+        let circleOffset = CGSize(width: 0, height: capsuleHeight - totalHeight)
+        return (capsuleOffset, circleOffset)
+    }
+    
+    private var capsuleGradient: LinearGradient {
+        LinearGradient(gradient: Gradient(colors: [.blue, .red]), startPoint: .bottom, endPoint: .top)
+    }
+    
+    private var circleColor: Color {
+        let percent = value / maxValue
+        return Color.interpolate(from: .blue, to: .red, percent: percent)
+    }
+    
+    private func updateValue(proxy: GeometryProxy, gesture: DragGesture.Value) {
+        let newValue = min(max(gesture.location.y, 0), proxy.size.height)
+        value = maxValue - (newValue / proxy.size.height * maxValue) // Inverti il valore per rispettare l'orientamento verticale e assegna il nuovo valore dello slider
     }
 }
 
-struct SliderView_Previews: PreviewProvider {
+#if DEBUG
+struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        SliderView()
+        ContentView()
+    }
+}
+#endif
+
+extension Color {
+    static func interpolate(from start: Color, to end: Color, percent: CGFloat) -> Color {
+        let percentage = max(0, min(1, percent))
+        guard let startComponents = UIColor(start).cgColor.components, let endComponents = UIColor(end).cgColor.components else {
+            return start // Ritorna il colore iniziale se non è possibile ottenere i componenti del colore
+        }
+        
+        let interpolatedRed = startComponents[0] + (endComponents[0] - startComponents[0]) * CGFloat(Float(percentage))
+        let interpolatedGreen = startComponents[1] + (endComponents[1] - startComponents[1]) * CGFloat(Float(percentage))
+        let interpolatedBlue = startComponents[2] + (endComponents[2] - startComponents[2]) * CGFloat(Float(percentage))
+        
+        return Color(red: Double(interpolatedRed), green: Double(interpolatedGreen), blue: Double(interpolatedBlue))
     }
 }
