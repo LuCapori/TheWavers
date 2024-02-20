@@ -11,7 +11,7 @@ import SwiftUI
 struct TheWaversApp: App {
     var body: some Scene {
         WindowGroup {
-            SliderView()
+            ContentView()
         }
     }
 }
