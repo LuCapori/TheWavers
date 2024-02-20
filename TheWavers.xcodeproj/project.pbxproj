@@ -12,6 +12,9 @@
 		69D4C8632B835D8B009A0B7C /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4C8622B835D8B009A0B7C /* SliderView.swift */; };
 		69D4C8652B835D8C009A0B7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D4C8642B835D8C009A0B7C /* Assets.xcassets */; };
 		69D4C8682B835D8C009A0B7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D4C8672B835D8C009A0B7C /* Preview Assets.xcassets */; };
+		69E842CD2B84C84E00B11E03 /* Syntoms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E842CA2B84C84E00B11E03 /* Syntoms.swift */; };
+		69E842CE2B84C84E00B11E03 /* SyntomsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E842CB2B84C84E00B11E03 /* SyntomsView.swift */; };
+		69E842CF2B84C84E00B11E03 /* SyntomsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E842CC2B84C84E00B11E03 /* SyntomsStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		69D4C8622B835D8B009A0B7C /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 		69D4C8642B835D8C009A0B7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69D4C8672B835D8C009A0B7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		69E842CA2B84C84E00B11E03 /* Syntoms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Syntoms.swift; sourceTree = "<group>"; };
+		69E842CB2B84C84E00B11E03 /* SyntomsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyntomsView.swift; sourceTree = "<group>"; };
+		69E842CC2B84C84E00B11E03 /* SyntomsStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyntomsStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,9 @@
 		69D4C85F2B835D8B009A0B7C /* TheWavers */ = {
 			isa = PBXGroup;
 			children = (
+				69E842CA2B84C84E00B11E03 /* Syntoms.swift */,
+				69E842CC2B84C84E00B11E03 /* SyntomsStruct.swift */,
+				69E842CB2B84C84E00B11E03 /* SyntomsView.swift */,
 				69D4C8602B835D8B009A0B7C /* TheWaversApp.swift */,
 				0A95169C2B836A1C0033C208 /* Views */,
 				69D4C8642B835D8C009A0B7C /* Assets.xcassets */,
@@ -149,7 +158,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69E842CE2B84C84E00B11E03 /* SyntomsView.swift in Sources */,
+				69E842CD2B84C84E00B11E03 /* Syntoms.swift in Sources */,
 				69D4C8632B835D8B009A0B7C /* SliderView.swift in Sources */,
+				69E842CF2B84C84E00B11E03 /* SyntomsStruct.swift in Sources */,
 				69D4C8612B835D8B009A0B7C /* TheWaversApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
