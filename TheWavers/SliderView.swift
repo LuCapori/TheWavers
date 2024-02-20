@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var value: CGFloat = 1
-    private var maxValue: CGFloat = 10
+    @State private var value: CGFloat = 0
+    private var maxValue: CGFloat = 1
     
     var body: some View {
         VStack(spacing: 50) {
             HStack {
                 CustomSlider(value: $value, maxValue: maxValue)
-                Spacer()
+                //Spacer()
             }
         }
-        .padding(.horizontal, 20)
+        //.padding(.horizontal, 20)
     }
 }
 
@@ -34,46 +34,42 @@ struct CustomSlider: View {
     var body: some View {
         GeometryReader { proxy in
             let offsets = calculateOffsets(proxy: proxy)
-            ZStack(alignment: .leading) {
+            ZStack() {
                 Capsule()
                     .fill(capsuleGradient)
-                    .frame(width: 20, height: proxy.size.height)
+                    .frame(width: 30, height: value*proxy.size.height)
                     .offset(offsets.capsuleOffset)
-                    .gesture(
-                        DragGesture()
-                            .onChanged { gesture in
-                                updateValue(proxy: proxy, gesture: gesture)
-                            }
-                    )
                     .zIndex(0)
                 
                 Circle()
                     .fill(circleColor)
-                    .frame(width: 20, height: 20)
+                    .frame(width: 30, height: 30)
                     .offset(offsets.circleOffset)
-                    .gesture(
-                        DragGesture()
-                            .onChanged { gesture in
-                                updateValue(proxy: proxy, gesture: gesture)
-                            }
-                    )
+
                     .zIndex(1)
             }
-            .frame(width: 20, height: UIScreen.main.bounds.height * 0.88, alignment: .leading) // Modifica delle dimensioni del frame
-        }
+            .gesture(
+                DragGesture()
+                    .onChanged { gesture in
+                        updateValue(proxy: proxy, gesture: gesture)
+                    }
+            )
+            
+        }.frame(width: 20, height: UIScreen.main.bounds.height * 0.80) // Modifica delle dimensioni del frame
+
     }
     
     private func calculateOffsets(proxy: GeometryProxy) -> (capsuleOffset: CGSize, circleOffset: CGSize) {
         let capsuleHeight = proxy.size.height
         let sliderHeight = capsuleHeight / maxValue
         let totalHeight = sliderHeight * value
-        let capsuleOffset = CGSize(width: 165, height: capsuleHeight - totalHeight)
-        let circleOffset = CGSize(width: 0, height: capsuleHeight - totalHeight)
+        let capsuleOffset = CGSize(width: 0, height: capsuleHeight - totalHeight)
+        let circleOffset = CGSize(width: 0, height: capsuleHeight - 1.5 * totalHeight)
         return (capsuleOffset, circleOffset)
     }
     
     private var capsuleGradient: LinearGradient {
-        LinearGradient(gradient: Gradient(colors: [.blue, .red]), startPoint: .bottom, endPoint: .top)
+        LinearGradient(gradient: Gradient(colors: [.blue, circleColor]), startPoint: .bottom, endPoint: .top)
     }
     
     private var circleColor: Color {
