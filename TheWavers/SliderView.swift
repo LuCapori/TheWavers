@@ -10,7 +10,8 @@ import SwiftUI
 struct ContentView: View {
     @State private var value: CGFloat = 0
     private var maxValue: CGFloat = 1
-    @State private var fatto: Bool = false
+    @State private var scrolled: Bool = false
+    private var sliderHeight: CGFloat = UIScreen.main.bounds.height * 0.6
     
     var body: some View {
         VStack() {
@@ -18,26 +19,31 @@ struct ContentView: View {
             ZStack{
                 Text("Scroll up \n to match your pain")
                     .font(.title2)
+                    .fontWeight(.thin)
                     .foregroundStyle(.gray)
                     .multilineTextAlignment(.center)
                     .frame(maxWidth: .infinity)
                     .opacity(value == 0 ? 1 : 0)
                 
-                Button("", systemImage: "chevron.forward.circle", action: {
+                Button{
                     
-                })
-                .disabled(!fatto)
-                .opacity(value == 0 ? 0 : 1)
+                } label: {
+                    Image(systemName: "arrow.right.circle")
+                        .foregroundStyle(.gray)
+                }
+                .disabled(!scrolled)
+                .opacity(scrolled ? 1 : 0)
                 .font(.title)
-                .foregroundStyle(.gray)
-                .bold()
- 
+                .frame(maxWidth: .infinity, alignment: .center)
+                .offset(y: sliderHeight * (1 - value))
+              
+                
             }
             Spacer()
 
             HStack {
                 Spacer()
-                CustomSlider(value: $value, fatto: $fatto, maxValue: maxValue)
+                CustomSlider(value: $value, scrolled: $scrolled, maxValue: maxValue)
                 Spacer()
             }
             Spacer()
@@ -46,18 +52,19 @@ struct ContentView: View {
         .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.85)
         .background(.black)
     }
+    
 }
 
 struct CustomSlider: View {
     @Binding var value: CGFloat
-    @Binding var fatto: Bool
+    @Binding var scrolled: Bool
 
     private var maxValue: CGFloat
     private var size = UIScreen.main.bounds.height * 0.1
     
-    init(value: Binding<CGFloat>, fatto: Binding<Bool>, maxValue: CGFloat) {
+    init(value: Binding<CGFloat>, scrolled: Binding<Bool>, maxValue: CGFloat) {
         self._value = value
-        self._fatto = fatto
+        self._scrolled = scrolled
 
         self.maxValue = maxValue
     }
@@ -80,10 +87,10 @@ struct CustomSlider: View {
                         }
                         .onEnded{_ in 
                             if value == 0{
-                                fatto = false
+                                scrolled = false
                             }
                             else {
-                                fatto = true
+                                scrolled = true
                             }
                         }
                 )
