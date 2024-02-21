@@ -14,45 +14,36 @@ struct ContentView: View {
     private var sliderHeight: CGFloat = UIScreen.main.bounds.height * 0.6
     
     var body: some View {
-        VStack() {
+        VStack {
             Spacer()
-            ZStack{
+            ZStack {
                 Text("Scroll up \n to match your pain")
                     .font(.title2)
                     .fontWeight(.thin)
-                    .foregroundStyle(.gray)
+                    .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
                     .frame(maxWidth: .infinity)
                     .opacity(value == 0 ? 1 : 0)
                 
-                Button{
-                    
-                } label: {
+                Button(action: {}) {
                     Image(systemName: "arrow.right.circle")
-                        .foregroundStyle(.gray)
+                        .foregroundColor(.gray)
                 }
                 .disabled(!scrolled)
-                .opacity(scrolled ? 1 : 0)
+                .opacity((scrolled && value != 0) ? 1 : 0)
                 .font(.title)
                 .frame(maxWidth: .infinity, alignment: .center)
                 .offset(y: sliderHeight * (1 - value))
-              
-                
             }
             Spacer()
 
-            HStack {
-                Spacer()
-                CustomSlider(value: $value, scrolled: $scrolled, maxValue: maxValue)
-                Spacer()
-            }
-            Spacer()
+            CustomSlider(value: $value, scrolled: $scrolled, maxValue: maxValue)
             
+            Spacer()
         }
         .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.85)
-        .background(.black)
+        .background(Color.black)
     }
-    
 }
 
 struct CustomSlider: View {
@@ -72,32 +63,25 @@ struct CustomSlider: View {
     var body: some View {
         GeometryReader { proxy in
             let offsets = calculateOffsets(proxy: proxy)
-                ZStack() {
-                    Capsule()
-                        .fill(capsuleGradient)
-                        .frame(width: size, height: size + (value * proxy.size.height))
-                        .offset(x: offsets.capsuleOffset.width, y: offsets.capsuleOffset.height-30)
-                        .zIndex(0)
-                    
-                }
-                .gesture(
-                    DragGesture()
-                        .onChanged { gesture in
-                            updateValue(proxy: proxy, gesture: gesture)
-                        }
-                        .onEnded{_ in 
-                            if value == 0{
-                                scrolled = false
-                            }
-                            else {
-                                scrolled = true
-                            }
-                        }
-                )
-              
-            
-        }.frame(width: size, height: UIScreen.main.bounds.height * 0.6) // Modifica delle dimensioni del frame
-        
+            ZStack {
+                Capsule()
+                    .fill(capsuleGradient)
+                    .frame(width: size, height: size + (value * proxy.size.height))
+                    .offset(x: offsets.capsuleOffset.width, y: offsets.capsuleOffset.height - 30)
+                    .zIndex(0)
+            }
+            .gesture(
+                DragGesture()
+                    .onChanged { gesture in
+                        updateValue(proxy: proxy, gesture: gesture)
+                        scrolled = false // Imposta scrolled a true quando lo slider viene trascinato
+                    }
+                    .onEnded { _ in
+                        scrolled = true // Imposta scrolled a false quando lo slider smette di essere trascinato
+                    }
+            )
+        }
+        .frame(width: size, height: UIScreen.main.bounds.height * 0.6)
     }
     
     private func calculateOffsets(proxy: GeometryProxy) -> (capsuleOffset: CGSize, circleOffset: CGSize) {
@@ -120,7 +104,7 @@ struct CustomSlider: View {
     
     private func updateValue(proxy: GeometryProxy, gesture: DragGesture.Value) {
         let newValue = min(max(gesture.location.y, 0), proxy.size.height)
-        value = maxValue - (newValue / proxy.size.height * maxValue) // Inverti il valore per rispettare l'orientamento verticale e assegna il nuovo valore dello slider
+        value = maxValue - (newValue / proxy.size.height * maxValue)
     }
 }
 
