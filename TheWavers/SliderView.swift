@@ -16,10 +16,11 @@ struct ContentView: View {
         VStack() {
             Spacer()
             ZStack{
-                Text("FORZA NAPOLI")
-                    .font(.title)
-                    .bold()
-                    .foregroundStyle(.blue)
+                Text("Scroll up \n to match your pain")
+                    .font(.title2)
+                    .foregroundStyle(.gray)
+                    .multilineTextAlignment(.center)
+                    .frame(maxWidth: .infinity)
                     .opacity(value == 0 ? 1 : 0)
                 
                 Button("", systemImage: "chevron.forward.circle", action: {
@@ -28,6 +29,7 @@ struct ContentView: View {
                 .disabled(!fatto)
                 .opacity(value == 0 ? 0 : 1)
                 .font(.title)
+                .foregroundStyle(.gray)
                 .bold()
  
             }
@@ -70,11 +72,6 @@ struct CustomSlider: View {
                         .offset(x: offsets.capsuleOffset.width, y: offsets.capsuleOffset.height-30)
                         .zIndex(0)
                     
-//                    Circle()
-//                        .fill(circleColor)
-//                        .frame(width: 40, height: 40)
-//                        .offset(offsets.circleOffset)
-//                        .zIndex(1)
                 }
                 .gesture(
                     DragGesture()
@@ -106,12 +103,12 @@ struct CustomSlider: View {
     }
     
     private var capsuleGradient: LinearGradient {
-        LinearGradient(gradient: Gradient(colors: [.blue, circleColor]), startPoint: .bottom, endPoint: .top)
+        LinearGradient(gradient: Gradient(colors: [.white, circleColor]), startPoint: .bottom, endPoint: .top)
     }
     
     private var circleColor: Color {
         let percent = value / maxValue
-        return Color.interpolate(from: .blue, to: .pink, percent: percent)
+        return Color.interpolate(from: .white, to: .purple, percent: percent)
     }
     
     private func updateValue(proxy: GeometryProxy, gesture: DragGesture.Value) {
