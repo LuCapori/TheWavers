@@ -94,12 +94,12 @@ struct CustomSlider: View {
     }
     
     private var capsuleGradient: LinearGradient {
-        LinearGradient(gradient: Gradient(colors: [.white, circleColor]), startPoint: .bottom, endPoint: .top)
+        LinearGradient(gradient: Gradient(colors: [.color1, circleColor]), startPoint: .bottom, endPoint: .top)
     }
     
     private var circleColor: Color {
         let percent = value / maxValue
-        return Color.interpolate(from: .white, to: .purple, percent: percent)
+        return Color.interpolate(from: .color1, to: .color, percent: percent)
     }
     
     private func updateValue(proxy: GeometryProxy, gesture: DragGesture.Value) {
