@@ -12,7 +12,8 @@ struct ContentView: View {
     private var maxValue: CGFloat = 1
     @State private var scrolled: Bool = false
     private var sliderHeight: CGFloat = UIScreen.main.bounds.height * 0.6
-    
+    private let feedbackGenerator = UISelectionFeedbackGenerator() // Cambiato il feedback aptico
+
     var body: some View {
         VStack {
             Spacer()
@@ -37,7 +38,7 @@ struct ContentView: View {
             }
             Spacer()
 
-            CustomSlider(value: $value, scrolled: $scrolled, maxValue: maxValue)
+            CustomSlider(value: $value, scrolled: $scrolled, maxValue: maxValue, feedbackGenerator: feedbackGenerator) // Passa il feedbackGenerator a CustomSlider
             
             Spacer()
         }
@@ -52,12 +53,13 @@ struct CustomSlider: View {
 
     private var maxValue: CGFloat
     private var size = UIScreen.main.bounds.height * 0.1
+    private let feedbackGenerator: UISelectionFeedbackGenerator // Cambiato il feedbackGenerator
     
-    init(value: Binding<CGFloat>, scrolled: Binding<Bool>, maxValue: CGFloat) {
+    init(value: Binding<CGFloat>, scrolled: Binding<Bool>, maxValue: CGFloat, feedbackGenerator: UISelectionFeedbackGenerator) { // Cambiato il feedbackGenerator
         self._value = value
         self._scrolled = scrolled
-
         self.maxValue = maxValue
+        self.feedbackGenerator = feedbackGenerator // Inizializza il feedbackGenerator
     }
     
     var body: some View {
@@ -74,10 +76,13 @@ struct CustomSlider: View {
                 DragGesture()
                     .onChanged { gesture in
                         updateValue(proxy: proxy, gesture: gesture)
-                        scrolled = false // Imposta scrolled a true quando lo slider viene trascinato
+                        scrolled = false
+                        _ = gesture.location.y / proxy.size.height // Calcola l'intensità basata sulla posizione dello scroll
+                        feedbackGenerator.selectionChanged() // Invia il feedback aptico
+                        feedbackGenerator.selectionChanged() // Aggiungi più impulsi per aumentare l'intensità
                     }
                     .onEnded { _ in
-                        scrolled = true // Imposta scrolled a false quando lo slider smette di essere trascinato
+                        scrolled = true
                     }
             )
         }
@@ -120,7 +125,7 @@ extension Color {
     static func interpolate(from start: Color, to end: Color, percent: CGFloat) -> Color {
         let percentage = max(0, min(1, percent))
         guard let startComponents = UIColor(start).cgColor.components, let endComponents = UIColor(end).cgColor.components else {
-            return start // Ritorna il colore iniziale se non è possibile ottenere i componenti del colore
+            return start
         }
         
         let interpolatedRed = startComponents[0] + (endComponents[0] - startComponents[0]) * CGFloat(Float(percentage))
