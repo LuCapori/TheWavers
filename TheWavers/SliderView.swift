@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SliderView: View {
     @State private var value: CGFloat = 0
     private var maxValue: CGFloat = 1
     @State private var scrolled: Bool = false
@@ -116,7 +116,7 @@ struct CustomSlider: View {
 #if DEBUG
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SliderView()
     }
 }
 #endif

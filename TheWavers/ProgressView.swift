@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProgressView: View {
     @State private var selectedIndex = 0
+    @State private var size = UIScreen.main.bounds.height * 0.1
     
     let items = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6", "Item 7", "Item 8", "Item 9", "Item 10"]
     
@@ -18,17 +19,18 @@ struct ProgressView: View {
                 HStack(spacing: 10) {
                     ForEach(items, id: \.self) { item in
                         Capsule()
-                            .foregroundColor(Color.white)
-                            .frame(height: 40)
-                            .overlay(
-                                Text(item)
-                                    .foregroundColor(.white)
-                                    .padding(.horizontal, 15)
-                            )
+                            .frame(width: 25,height: 60)
+                
                             .padding(.vertical, 10)
                             .padding(.horizontal, 10)
-                            .background(Color.white)
-                            .cornerRadius(20)
+                            .background(capsuleColor(value: 0.5))
+                            .cornerRadius(size * 0.5)
+                            .overlay{
+                                Text("T")
+                                    .foregroundColor(.black)
+                                    .frame(width: 25, height: 60)
+                                    .background(capsuleColor(value: 0.5))
+                            }
                     }
                 }
                 .padding()
@@ -37,51 +39,56 @@ struct ProgressView: View {
             Spacer()
             
             // Tab bar
-            HStack {
-                Button(action: {
-                    self.selectedIndex = 0
-                }) {
-                    VStack {
-                        Image(systemName: "circle.fill")
-                            .imageScale(.small)
-                        Text("Myself")
-                            .font(.subheadline)
-                            .fontWeight(.thin)
-                    }
-                }
-                
-                Spacer()
-                
-                Button(action: {
-                    self.selectedIndex = 1
-                }) {
-                    VStack {
-                        Image(systemName: "plus.circle.fill")
-                            .imageScale(.large)
-                        Text("Check-in")
-                            .font(.subheadline)
-                            .fontWeight(.thin)
-                    }
-                }
-                
-                Spacer()
-                
-                Button(action: {
-                    self.selectedIndex = 2
-                }) {
-                    VStack {
-                        Image(systemName: "chart.bar.fill")
-                            .imageScale(.small)
-                        Text("Progress")
-                            .font(.subheadline)
-                            .fontWeight(.thin)
-                    }
-                }
-            }
+//            HStack {
+//                Button(action: {
+//                    self.selectedIndex = 0
+//                }) {
+//                    VStack {
+//                        Image(systemName: "circle.fill")
+//                            .imageScale(.small)
+//                        Text("Myself")
+//                            .font(.subheadline)
+//                            .fontWeight(.thin)
+//                    }
+//                }
+//                
+//                Spacer()
+//                
+//                Button(action: {
+//                    self.selectedIndex = 1
+//                }) {
+//                    VStack {
+//                        Image(systemName: "plus.circle.fill")
+//                            .imageScale(.large)
+//                        Text("Check-in")
+//                            .font(.subheadline)
+//                            .fontWeight(.thin)
+//                    }
+//                }
+//                
+//                Spacer()
+//                
+//                Button(action: {
+//                    self.selectedIndex = 2
+//                }) {
+//                    VStack {
+//                        Image(systemName: "chart.bar.fill")
+//                            .imageScale(.small)
+//                        Text("Progress")
+//                            .font(.subheadline)
+//                            .fontWeight(.thin)
+//                    }
+//                }
+//            }
             .padding()
             .foregroundColor(.white)
         }
     }
+}
+
+func capsuleColor(value: Double) -> Color {
+    let percent = value
+    return Color.interpolate(from: .color1, to: .color, percent: percent)
 }
 
 struct ProgressView_Previews: PreviewProvider {
