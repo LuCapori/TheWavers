@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0A91C84F2B874F5100310C4A /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A91C84E2B874F5100310C4A /* ProgressView.swift */; };
 		0AE513792B87A153002B72F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE513782B87A153002B72F1 /* ContentView.swift */; };
+		0AE5137C2B88968B002B72F1 /* MyselfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5137B2B88968B002B72F1 /* MyselfView.swift */; };
 		6964A3062B835ED200A9BB69 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6964A3052B835ED200A9BB69 /* .gitignore */; };
 		69D4C8612B835D8B009A0B7C /* TheWaversApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4C8602B835D8B009A0B7C /* TheWaversApp.swift */; };
 		69D4C8632B835D8B009A0B7C /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4C8622B835D8B009A0B7C /* SliderView.swift */; };
@@ -23,6 +24,7 @@
 		0A91C84E2B874F5100310C4A /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		0AB1A3BC2B84F944009E0D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0AE513782B87A153002B72F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0AE5137B2B88968B002B72F1 /* MyselfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyselfView.swift; sourceTree = "<group>"; };
 		6964A3052B835ED200A9BB69 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		69A3A89C2B836D8C00DDAF98 /* Syntoms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Syntoms.swift; sourceTree = "<group>"; };
 		69D4C85D2B835D8B009A0B7C /* TheWavers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheWavers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +54,7 @@
 				69D4C8622B835D8B009A0B7C /* SliderView.swift */,
 				0A91C84E2B874F5100310C4A /* ProgressView.swift */,
 				0AE513782B87A153002B72F1 /* ContentView.swift */,
+				0AE5137B2B88968B002B72F1 /* MyselfView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				69E842CF2B84C84E00B11E03 /* SyntomsStruct.swift in Sources */,
 				0AE513792B87A153002B72F1 /* ContentView.swift in Sources */,
 				69D4C8612B835D8B009A0B7C /* TheWaversApp.swift in Sources */,
+				0AE5137C2B88968B002B72F1 /* MyselfView.swift in Sources */,
 				0A91C84F2B874F5100310C4A /* ProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

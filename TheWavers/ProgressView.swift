@@ -38,48 +38,7 @@ struct ProgressView: View {
             
             Spacer()
             
-            // Tab bar
-//            HStack {
-//                Button(action: {
-//                    self.selectedIndex = 0
-//                }) {
-//                    VStack {
-//                        Image(systemName: "circle.fill")
-//                            .imageScale(.small)
-//                        Text("Myself")
-//                            .font(.subheadline)
-//                            .fontWeight(.thin)
-//                    }
-//                }
-//                
-//                Spacer()
-//                
-//                Button(action: {
-//                    self.selectedIndex = 1
-//                }) {
-//                    VStack {
-//                        Image(systemName: "plus.circle.fill")
-//                            .imageScale(.large)
-//                        Text("Check-in")
-//                            .font(.subheadline)
-//                            .fontWeight(.thin)
-//                    }
-//                }
-//                
-//                Spacer()
-//                
-//                Button(action: {
-//                    self.selectedIndex = 2
-//                }) {
-//                    VStack {
-//                        Image(systemName: "chart.bar.fill")
-//                            .imageScale(.small)
-//                        Text("Progress")
-//                            .font(.subheadline)
-//                            .fontWeight(.thin)
-//                    }
-//                }
-//            }
+           
             .padding()
             .foregroundColor(.white)
         }

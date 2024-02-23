@@ -8,18 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        TabView {
-            ProgressView()
-                .tabItem { 
-                    Label("Progress", systemImage: "chart.bar.fill")
-                        
-                }
-            SliderView()
-                .tabItem {
-                    Label("Add", systemImage: "plus.circle.fill")
-                }
-        }
+        NavigationStack {
+            TabView {
+                ProgressView()
+                    .tabItem {
+                        Label("Progress", systemImage: "chart.bar.fill")
+                    }
+                
+                SliderView()
+                    .tabItem {
+                        Label("Add", systemImage: "plus.circle.fill")
+                    }
+                
+                MyselfView()
+                    .tabItem {
+                        Label("Myself", systemImage: "circle.fill")
+                    }
+            }.preferredColorScheme(.dark)
+            .tint(LinearGradient(gradient: .init(colors: [.color, .color1]), startPoint: .bottom, endPoint: .top))
+        } .navigationBarBackButtonHidden(true)
     }
 }
 
