@@ -20,7 +20,7 @@ struct ProgressView: View {
                     ForEach(items, id: \.self) { item in
                         Capsule()
                             .frame(width: 25,height: 60)
-                
+                        
                             .padding(.vertical, 10)
                             .padding(.horizontal, 10)
                             .background(capsuleColor(value: 0.5))
@@ -38,50 +38,9 @@ struct ProgressView: View {
             
             Spacer()
             
-            // Tab bar
-//            HStack {
-//                Button(action: {
-//                    self.selectedIndex = 0
-//                }) {
-//                    VStack {
-//                        Image(systemName: "circle.fill")
-//                            .imageScale(.small)
-//                        Text("Myself")
-//                            .font(.subheadline)
-//                            .fontWeight(.thin)
-//                    }
-//                }
-//                
-//                Spacer()
-//                
-//                Button(action: {
-//                    self.selectedIndex = 1
-//                }) {
-//                    VStack {
-//                        Image(systemName: "plus.circle.fill")
-//                            .imageScale(.large)
-//                        Text("Check-in")
-//                            .font(.subheadline)
-//                            .fontWeight(.thin)
-//                    }
-//                }
-//                
-//                Spacer()
-//                
-//                Button(action: {
-//                    self.selectedIndex = 2
-//                }) {
-//                    VStack {
-//                        Image(systemName: "chart.bar.fill")
-//                            .imageScale(.small)
-//                        Text("Progress")
-//                            .font(.subheadline)
-//                            .fontWeight(.thin)
-//                    }
-//                }
-//            }
-            .padding()
-            .foregroundColor(.white)
+            
+                .padding()
+                .foregroundColor(.white)
         }
     }
 }
