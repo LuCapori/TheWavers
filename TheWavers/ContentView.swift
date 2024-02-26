@@ -26,8 +26,9 @@ struct ContentView: View {
                     .tabItem {
                         Label("Myself", systemImage: "circle.fill")
                     }
-            }.preferredColorScheme(.dark)
-                .tint(LinearGradient(gradient: .init(colors: [.color, .color1]), startPoint: .bottom, endPoint: .top))
+            }
+            .preferredColorScheme(.dark)
+            
         } .navigationBarBackButtonHidden(true)
     }
 }
