@@ -19,7 +19,14 @@ struct ContentView: View {
                 .tabItem {
                     Label("Add", systemImage: "plus.circle.fill")
                 }
+                SyntomsView()
+                .tabItem {
+                    Label("look", systemImage: "circle")
+                }
+                    
+                
         }
+       
     }
 }
 
