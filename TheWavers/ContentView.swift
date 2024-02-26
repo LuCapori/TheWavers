@@ -22,10 +22,12 @@ struct ContentView: View {
                         Label("Add", systemImage: "plus.circle.fill")
                     }
                 
-                MyselfView()
+         //       MyselfView()
+              TextInser()
                     .tabItem {
                         Label("Myself", systemImage: "circle.fill")
                     }
+                
             }.preferredColorScheme(.dark)
                 .tint(LinearGradient(gradient: .init(colors: [.color, .color1]), startPoint: .bottom, endPoint: .top))
         } .navigationBarBackButtonHidden(true)

@@ -52,11 +52,11 @@ class ViewController: UIViewController {
         
         //PEZZO PER LA POSIZIONE DEI PuLSANTI ( VEDI RIGA 48)************************* -->
         
-        let buttonWidth: CGFloat = 70
+        let buttonWidth: CGFloat = 100
         let buttonHeight: CGFloat = 50
-        let xOffset: CGFloat = 50 // Posizione fissa del primo pulsante sull'asse x
+        let xOffset: CGFloat = 27 // Posizione fissa del primo pulsante sull'asse x
         let yOffset: CGFloat = 20 // Posizione fissa del primo pulsante sull'asse y
-        let spacing: CGFloat = 40 // Spazio tra i pulsanti
+        let spacing: CGFloat = 20 // Spazio tra i pulsanti
         
         // Numero di righe e colonne nella griglia
         let numberOfRows = 3
@@ -83,6 +83,8 @@ class ViewController: UIViewController {
                     button.setTitle(title, for: .normal)
                     button.tag = index // Tag per identificare il pulsante
                     button.addTarget(self, action: #selector(buttonTapped(_:)), for: .touchUpInside)
+                    button.layer.cornerRadius = 25
+
                     contentView.addSubview(button)
                 }
             }
