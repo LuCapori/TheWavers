@@ -19,13 +19,12 @@ struct ProgressView: View {
                 HStack(spacing: 10) {
                     ForEach(items, id: \.self) { item in
                         Capsule()
-                            .frame(width: 25,height: 60)
-                        
+                            .frame(width: 25, height: 60)
                             .padding(.vertical, 10)
                             .padding(.horizontal, 10)
                             .background(capsuleColor(value: 0.5))
                             .cornerRadius(size * 0.5)
-                            .overlay{
+                            .overlay {
                                 Text("T")
                                     .foregroundColor(.black)
                                     .frame(width: 25, height: 60)
@@ -38,9 +37,23 @@ struct ProgressView: View {
             
             Spacer()
             
+            VStack() {
+                Text("Your overall monthly \nprogress")
+                    .font(.title)
+                    .bold()
+                
+            }
             
-                .padding()
-                .foregroundColor(.white)
+            ZStack(alignment: .bottomTrailing) {
+                Circle()
+                    .fill(capsuleColor(value: 0.5))
+                    .frame(width: 200, height: 200)
+                    .offset(x: 30, y: 90)
+                Circle()
+                    .fill(.color)
+                    .frame(width: 300, height: 300)
+            }
+            Spacer(minLength: 150)
         }
     }
 }
@@ -55,4 +68,5 @@ struct ProgressView_Previews: PreviewProvider {
         ProgressView()
     }
 }
+
 
