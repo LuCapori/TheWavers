@@ -27,7 +27,7 @@ struct ContentView: View {
                         Label("Myself", systemImage: "circle.fill")
                     }
             }.preferredColorScheme(.dark)
-            .tint(LinearGradient(gradient: .init(colors: [.color, .color1]), startPoint: .bottom, endPoint: .top))
+                .tint(LinearGradient(gradient: .init(colors: [.color, .color1]), startPoint: .bottom, endPoint: .top))
         } .navigationBarBackButtonHidden(true)
     }
 }

@@ -13,7 +13,7 @@ struct SliderView: View {
     @State private var scrolled: Bool = false
     private var sliderHeight: CGFloat = UIScreen.main.bounds.height * 0.6
     private let feedbackGenerator = UISelectionFeedbackGenerator() // Cambiato il feedback aptico
-
+    
     var body: some View {
         NavigationStack {
             VStack {
@@ -38,7 +38,7 @@ struct SliderView: View {
                     .offset(y: sliderHeight * (1 - value))
                 }
                 Spacer()
-
+                
                 CustomSlider(value: $value, scrolled: $scrolled, maxValue: maxValue, feedbackGenerator: feedbackGenerator) // Passa il feedbackGenerator a CustomSlider
                 
                 Spacer()
@@ -52,7 +52,7 @@ struct SliderView: View {
 struct CustomSlider: View {
     @Binding var value: CGFloat
     @Binding var scrolled: Bool
-
+    
     private var maxValue: CGFloat
     private var size = UIScreen.main.bounds.height * 0.1
     private let feedbackGenerator: UISelectionFeedbackGenerator // Cambiato il feedbackGenerator
