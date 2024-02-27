@@ -22,8 +22,7 @@ struct ContentView: View {
                         Label("Add", systemImage: "plus.circle.fill")
                     }
                 
-         //       MyselfView()
-              TextInser()
+                MyselfView()
                     .tabItem {
                         Label("Myself", systemImage: "circle.fill")
                     }
