@@ -7,50 +7,52 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SliderView: View {
     @State private var value: CGFloat = 0
     private var maxValue: CGFloat = 1
     @State private var scrolled: Bool = false
     private var sliderHeight: CGFloat = UIScreen.main.bounds.height * 0.6
     private let feedbackGenerator = UISelectionFeedbackGenerator() // Cambiato il feedback aptico
-
+    
     var body: some View {
-        VStack {
-            Spacer()
-            ZStack {
-                Text("Scroll up \n to match your pain")
-                    .font(.title2)
-                    .fontWeight(.thin)
-                    .foregroundColor(.gray)
-                    .multilineTextAlignment(.center)
-                    .frame(maxWidth: .infinity)
-                    .opacity(value == 0 ? 1 : 0)
-                
-                Button(action: {}) {
-                    Image(systemName: "arrow.right.circle")
+        NavigationStack {
+            VStack {
+                Spacer()
+                ZStack {
+                    Text("Scroll up \n to match your pain")
+                        .font(.title2)
+                        .fontWeight(.thin)
                         .foregroundColor(.gray)
+                        .multilineTextAlignment(.center)
+                        .frame(maxWidth: .infinity)
+                        .opacity(value == 0 ? 1 : 0)
+                    
+                    NavigationLink(destination: ContentView()) {
+                        Image(systemName: "arrow.right.circle")
+                            .foregroundColor(.gray)
+                    }
+                    .disabled(!scrolled)
+                    .opacity((scrolled && value != 0) ? 1 : 0)
+                    .font(.title)
+                    .frame(maxWidth: .infinity, alignment: .center)
+                    .offset(y: sliderHeight * (1 - value))
                 }
-                .disabled(!scrolled)
-                .opacity((scrolled && value != 0) ? 1 : 0)
-                .font(.title)
-                .frame(maxWidth: .infinity, alignment: .center)
-                .offset(y: sliderHeight * (1 - value))
+                Spacer()
+                
+                CustomSlider(value: $value, scrolled: $scrolled, maxValue: maxValue, feedbackGenerator: feedbackGenerator) // Passa il feedbackGenerator a CustomSlider
+                
+                Spacer()
             }
-            Spacer()
-
-            CustomSlider(value: $value, scrolled: $scrolled, maxValue: maxValue, feedbackGenerator: feedbackGenerator) // Passa il feedbackGenerator a CustomSlider
-            
-            Spacer()
+            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.85)
+            .background(Color.black)
         }
-        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.85)
-        .background(Color.black)
     }
 }
 
 struct CustomSlider: View {
     @Binding var value: CGFloat
     @Binding var scrolled: Bool
-
+    
     private var maxValue: CGFloat
     private var size = UIScreen.main.bounds.height * 0.1
     private let feedbackGenerator: UISelectionFeedbackGenerator // Cambiato il feedbackGenerator
@@ -116,7 +118,7 @@ struct CustomSlider: View {
 #if DEBUG
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SliderView()
     }
 }
 #endif

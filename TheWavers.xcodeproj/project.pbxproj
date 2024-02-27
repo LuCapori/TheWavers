@@ -10,13 +10,17 @@
 		0A91C84F2B874F5100310C4A /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A91C84E2B874F5100310C4A /* ProgressView.swift */; };
 		4E1EB6F62B8DEC9800E2D534 /* EmotionDetector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4E1EB6F52B8DEC9800E2D534 /* EmotionDetector.mlmodel */; };
 		4ED63B8A2B87A39000751458 /* AiTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED63B892B87A39000751458 /* AiTestView.swift */; };
+		0AE513792B87A153002B72F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE513782B87A153002B72F1 /* ContentView.swift */; };
+		0AE5137C2B88968B002B72F1 /* MyselfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5137B2B88968B002B72F1 /* MyselfView.swift */; };
+		69013CBF2B8C950D00C67747 /* TextInser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69013CBE2B8C950D00C67747 /* TextInser.swift */; };
+		69013CC12B8DE40C00C67747 /* SyntomsNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69013CC02B8DE40C00C67747 /* SyntomsNew.swift */; };
 		6964A3062B835ED200A9BB69 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6964A3052B835ED200A9BB69 /* .gitignore */; };
 		69D4C8612B835D8B009A0B7C /* TheWaversApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4C8602B835D8B009A0B7C /* TheWaversApp.swift */; };
 		69D4C8632B835D8B009A0B7C /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4C8622B835D8B009A0B7C /* SliderView.swift */; };
 		69D4C8652B835D8C009A0B7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D4C8642B835D8C009A0B7C /* Assets.xcassets */; };
 		69D4C8682B835D8C009A0B7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D4C8672B835D8C009A0B7C /* Preview Assets.xcassets */; };
 		69E842CD2B84C84E00B11E03 /* Syntoms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E842CA2B84C84E00B11E03 /* Syntoms.swift */; };
-		69E842CE2B84C84E00B11E03 /* SyntomsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E842CB2B84C84E00B11E03 /* SyntomsView.swift */; };
+		69E842CE2B84C84E00B11E03 /* SyntomsView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E842CB2B84C84E00B11E03 /* SyntomsView1.swift */; };
 		69E842CF2B84C84E00B11E03 /* SyntomsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E842CC2B84C84E00B11E03 /* SyntomsStruct.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +29,10 @@
 		0AB1A3BC2B84F944009E0D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4E1EB6F52B8DEC9800E2D534 /* EmotionDetector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = EmotionDetector.mlmodel; sourceTree = "<group>"; };
 		4ED63B892B87A39000751458 /* AiTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AiTestView.swift; sourceTree = "<group>"; };
+		0AE513782B87A153002B72F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0AE5137B2B88968B002B72F1 /* MyselfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyselfView.swift; sourceTree = "<group>"; };
+		69013CBE2B8C950D00C67747 /* TextInser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInser.swift; sourceTree = "<group>"; };
+		69013CC02B8DE40C00C67747 /* SyntomsNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntomsNew.swift; sourceTree = "<group>"; };
 		6964A3052B835ED200A9BB69 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		69A3A89C2B836D8C00DDAF98 /* Syntoms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Syntoms.swift; sourceTree = "<group>"; };
 		69D4C85D2B835D8B009A0B7C /* TheWavers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheWavers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,7 +41,7 @@
 		69D4C8642B835D8C009A0B7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69D4C8672B835D8C009A0B7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		69E842CA2B84C84E00B11E03 /* Syntoms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Syntoms.swift; sourceTree = "<group>"; };
-		69E842CB2B84C84E00B11E03 /* SyntomsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyntomsView.swift; sourceTree = "<group>"; };
+		69E842CB2B84C84E00B11E03 /* SyntomsView1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyntomsView1.swift; sourceTree = "<group>"; };
 		69E842CC2B84C84E00B11E03 /* SyntomsStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyntomsStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,9 +59,14 @@
 		0A95169C2B836A1C0033C208 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				69013CBE2B8C950D00C67747 /* TextInser.swift */,
+				69E842CB2B84C84E00B11E03 /* SyntomsView1.swift */,
+				69013CC02B8DE40C00C67747 /* SyntomsNew.swift */,
 				69D4C8622B835D8B009A0B7C /* SliderView.swift */,
 				0A91C84E2B874F5100310C4A /* ProgressView.swift */,
 				4ED63B892B87A39000751458 /* AiTestView.swift */,
+				0AE513782B87A153002B72F1 /* ContentView.swift */,
+				0AE5137B2B88968B002B72F1 /* MyselfView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -91,7 +104,6 @@
 				69E842CC2B84C84E00B11E03 /* SyntomsStruct.swift */,
 				69D4C8602B835D8B009A0B7C /* TheWaversApp.swift */,
 				69A3A89C2B836D8C00DDAF98 /* Syntoms.swift */,
-				69E842CB2B84C84E00B11E03 /* SyntomsView.swift */,
 				0A95169C2B836A1C0033C208 /* Views */,
 				69D4C8642B835D8C009A0B7C /* Assets.xcassets */,
 				4E1EB6F02B8DDD0500E2D534 /* AI */,
@@ -179,11 +191,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69E842CE2B84C84E00B11E03 /* SyntomsView.swift in Sources */,
+				69E842CE2B84C84E00B11E03 /* SyntomsView1.swift in Sources */,
 				69E842CD2B84C84E00B11E03 /* Syntoms.swift in Sources */,
 				69D4C8632B835D8B009A0B7C /* SliderView.swift in Sources */,
 				69E842CF2B84C84E00B11E03 /* SyntomsStruct.swift in Sources */,
+				69013CC12B8DE40C00C67747 /* SyntomsNew.swift in Sources */,
+				0AE513792B87A153002B72F1 /* ContentView.swift in Sources */,
 				69D4C8612B835D8B009A0B7C /* TheWaversApp.swift in Sources */,
+				69013CBF2B8C950D00C67747 /* TextInser.swift in Sources */,
+				0AE5137C2B88968B002B72F1 /* MyselfView.swift in Sources */,
 				0A91C84F2B874F5100310C4A /* ProgressView.swift in Sources */,
 				4ED63B8A2B87A39000751458 /* AiTestView.swift in Sources */,
 				4E1EB6F62B8DEC9800E2D534 /* EmotionDetector.mlmodel in Sources */,
@@ -320,7 +336,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TheWavers/Preview Content\"";
-				DEVELOPMENT_TEAM = 2637N3HLSW;
+				DEVELOPMENT_TEAM = Y8K46BUAB8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TheWavers/Info.plist;
@@ -351,7 +367,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TheWavers/Preview Content\"";
-				DEVELOPMENT_TEAM = 2637N3HLSW;
+				DEVELOPMENT_TEAM = Y8K46BUAB8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TheWavers/Info.plist;
