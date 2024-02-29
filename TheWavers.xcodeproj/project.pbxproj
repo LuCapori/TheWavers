@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0A91C84F2B874F5100310C4A /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A91C84E2B874F5100310C4A /* ProgressView.swift */; };
-		4E1EB6F62B8DEC9800E2D534 /* EmotionDetector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4E1EB6F52B8DEC9800E2D534 /* EmotionDetector.mlmodel */; };
-		4ED63B8A2B87A39000751458 /* AiTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED63B892B87A39000751458 /* AiTestView.swift */; };
 		0AE513792B87A153002B72F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE513782B87A153002B72F1 /* ContentView.swift */; };
 		0AE5137C2B88968B002B72F1 /* MyselfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5137B2B88968B002B72F1 /* MyselfView.swift */; };
+		4E1EB6F62B8DEC9800E2D534 /* EmotionDetector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4E1EB6F52B8DEC9800E2D534 /* EmotionDetector.mlmodel */; };
+		4ED63B8A2B87A39000751458 /* AiTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED63B892B87A39000751458 /* AiTestView.swift */; };
 		69013CBF2B8C950D00C67747 /* TextInser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69013CBE2B8C950D00C67747 /* TextInser.swift */; };
 		69013CC12B8DE40C00C67747 /* SyntomsNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69013CC02B8DE40C00C67747 /* SyntomsNew.swift */; };
 		6964A3062B835ED200A9BB69 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6964A3052B835ED200A9BB69 /* .gitignore */; };
@@ -27,10 +27,10 @@
 /* Begin PBXFileReference section */
 		0A91C84E2B874F5100310C4A /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		0AB1A3BC2B84F944009E0D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		4E1EB6F52B8DEC9800E2D534 /* EmotionDetector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = EmotionDetector.mlmodel; sourceTree = "<group>"; };
-		4ED63B892B87A39000751458 /* AiTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AiTestView.swift; sourceTree = "<group>"; };
 		0AE513782B87A153002B72F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0AE5137B2B88968B002B72F1 /* MyselfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyselfView.swift; sourceTree = "<group>"; };
+		4E1EB6F52B8DEC9800E2D534 /* EmotionDetector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = EmotionDetector.mlmodel; sourceTree = "<group>"; };
+		4ED63B892B87A39000751458 /* AiTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AiTestView.swift; sourceTree = "<group>"; };
 		69013CBE2B8C950D00C67747 /* TextInser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInser.swift; sourceTree = "<group>"; };
 		69013CC02B8DE40C00C67747 /* SyntomsNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntomsNew.swift; sourceTree = "<group>"; };
 		6964A3052B835ED200A9BB69 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -336,7 +336,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TheWavers/Preview Content\"";
-				DEVELOPMENT_TEAM = Y8K46BUAB8;
+				DEVELOPMENT_TEAM = SRL43XWPNS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TheWavers/Info.plist;
@@ -351,7 +351,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.LuCapori.TheWavers;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MassimoPaloscia.TheWavers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -367,7 +367,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TheWavers/Preview Content\"";
-				DEVELOPMENT_TEAM = Y8K46BUAB8;
+				DEVELOPMENT_TEAM = SRL43XWPNS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TheWavers/Info.plist;
@@ -382,7 +382,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.LuCapori.TheWavers;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MassimoPaloscia.TheWavers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
