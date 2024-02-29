@@ -17,9 +17,6 @@ struct ProgressView: View {
     var body: some View {
         GeometryReader {reader in
             
-            let width = reader.size.width
-            let height = reader.size.height
-            
             VStack {
                 Text("Hi, Sara")
                     .font(.title2)
@@ -52,22 +49,7 @@ struct ProgressView: View {
                     .padding()
                 }
                 
-                Text("Your overall monthly\nprogress")
-                    .font(.title)
-                    .bold()
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding()
-                
-                ZStack(alignment: .bottomTrailing) {
-                    Circle()
-                        .fill(capsuleColor(value: 0.5))
-                        .frame(width: width * 0.45, height: width * 0.5)
-                        .offset(x: width * 0.08, y: width * 0.3)
-                    Circle()
-                        .fill(.color)
-                        .frame(width: width * 0.7, height: width * 0.7)
-                }
-                Spacer(minLength: height * 0.145)
+               
             }
         }
     }
@@ -85,7 +67,7 @@ struct ProgressView_Previews: PreviewProvider {
 }
 
 #Preview {
-    ContentView()
+    SliderView()
 }
 
 

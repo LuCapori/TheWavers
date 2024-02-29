@@ -10,6 +10,7 @@
 		0A91C84F2B874F5100310C4A /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A91C84E2B874F5100310C4A /* ProgressView.swift */; };
 		0AE513792B87A153002B72F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE513782B87A153002B72F1 /* ContentView.swift */; };
 		0AE5137C2B88968B002B72F1 /* MyselfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5137B2B88968B002B72F1 /* MyselfView.swift */; };
+		0AFBBC6B2B8F81F500ECD2FD /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFBBC6A2B8F81F500ECD2FD /* CustomTabView.swift */; };
 		69013CBF2B8C950D00C67747 /* TextInser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69013CBE2B8C950D00C67747 /* TextInser.swift */; };
 		69013CC12B8DE40C00C67747 /* SyntomsNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69013CC02B8DE40C00C67747 /* SyntomsNew.swift */; };
 		6964A3062B835ED200A9BB69 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6964A3052B835ED200A9BB69 /* .gitignore */; };
@@ -27,6 +28,7 @@
 		0AB1A3BC2B84F944009E0D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0AE513782B87A153002B72F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0AE5137B2B88968B002B72F1 /* MyselfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyselfView.swift; sourceTree = "<group>"; };
+		0AFBBC6A2B8F81F500ECD2FD /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		69013CBE2B8C950D00C67747 /* TextInser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInser.swift; sourceTree = "<group>"; };
 		69013CC02B8DE40C00C67747 /* SyntomsNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntomsNew.swift; sourceTree = "<group>"; };
 		6964A3052B835ED200A9BB69 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				0A91C84E2B874F5100310C4A /* ProgressView.swift */,
 				0AE513782B87A153002B72F1 /* ContentView.swift */,
 				0AE5137B2B88968B002B72F1 /* MyselfView.swift */,
+				0AFBBC6A2B8F81F500ECD2FD /* CustomTabView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				69013CC12B8DE40C00C67747 /* SyntomsNew.swift in Sources */,
 				0AE513792B87A153002B72F1 /* ContentView.swift in Sources */,
 				69D4C8612B835D8B009A0B7C /* TheWaversApp.swift in Sources */,
+				0AFBBC6B2B8F81F500ECD2FD /* CustomTabView.swift in Sources */,
 				69013CBF2B8C950D00C67747 /* TextInser.swift in Sources */,
 				0AE5137C2B88968B002B72F1 /* MyselfView.swift in Sources */,
 				0A91C84F2B874F5100310C4A /* ProgressView.swift in Sources */,
@@ -320,7 +324,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TheWavers/Preview Content\"";
-				DEVELOPMENT_TEAM = Y8K46BUAB8;
+				DEVELOPMENT_TEAM = 2637N3HLSW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TheWavers/Info.plist;
@@ -351,7 +355,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TheWavers/Preview Content\"";
-				DEVELOPMENT_TEAM = Y8K46BUAB8;
+				DEVELOPMENT_TEAM = 2637N3HLSW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TheWavers/Info.plist;
