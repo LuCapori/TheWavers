@@ -9,8 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var tabSelection: Tabs = .tab1
-    
     @State var tabSelectionInt: Int = 0
     @State var isSliderPresented = false
     
@@ -20,7 +18,7 @@ struct ContentView: View {
         TabViewItem(viewName: "Myself", iconName: "person.fill"),
     ]
     
-
+    
     var body: some View {
         
         NavigationView {
@@ -46,6 +44,3 @@ struct ContentView: View {
     ContentView()
 }
 
-enum Tabs {
-    case tab1, tab2, tab3
-}
