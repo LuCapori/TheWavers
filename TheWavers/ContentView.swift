@@ -9,30 +9,43 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State var tabSelection: Tabs = .tab1
+    
+    @State var tabSelectionInt: Int = 0
+    @State var isSliderPresented = false
+    
+    let views : [TabViewItem] = [
+        TabViewItem(viewName: "Journal", iconName: "chart.bar.fill"),
+        TabViewItem(viewName: "Add", iconName: "plus.circle.fill", hasToNavigate: true),
+        TabViewItem(viewName: "Myself", iconName: "person.fill"),
+    ]
+    
+
     var body: some View {
-        NavigationStack {
-            TabView {
-                ProgressView()
-                    .tabItem {
-                        Label("Progress", systemImage: "chart.bar.fill")
-                    }
+        
+        NavigationView {
+            GeometryReader{ reader in
+                let width = reader.size.width
+                let height = reader.size.height
                 
-                SliderView()
-                    .tabItem {
-                        Label("Add", systemImage: "plus.circle.fill")
+                VStack {
+                    ZStack{
+                        views[tabSelectionInt].view
                     }
-                
-                MyselfView()
-                    .tabItem {
-                        Label("Myself", systemImage: "circle.fill")
-                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    CustomTabView(views: views, selection: $tabSelectionInt)
+                        .frame(width: width, height: height * 0.1)
+                }
             }
-            .preferredColorScheme(.dark)
-            
-        } .navigationBarBackButtonHidden(true)
+        }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
 #Preview {
     ContentView()
+}
+
+enum Tabs {
+    case tab1, tab2, tab3
 }
