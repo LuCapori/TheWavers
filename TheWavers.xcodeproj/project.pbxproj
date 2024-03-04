@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A4FF32E2B9219BB00F01502 /* MonthInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4FF32D2B9219BB00F01502 /* MonthInfo.swift */; };
+		0A4FF3302B921A1A00F01502 /* MonthCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4FF32F2B921A1A00F01502 /* MonthCard.swift */; };
+		0A4FF3322B921E4400F01502 /* Face.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4FF3312B921E4400F01502 /* Face.swift */; };
+		0A4FF3342B92271400F01502 /* MonthList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4FF3332B92271400F01502 /* MonthList.swift */; };
 		0A91C84F2B874F5100310C4A /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A91C84E2B874F5100310C4A /* ProgressView.swift */; };
 		0AE513792B87A153002B72F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE513782B87A153002B72F1 /* ContentView.swift */; };
 		0AE5137C2B88968B002B72F1 /* MyselfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5137B2B88968B002B72F1 /* MyselfView.swift */; };
@@ -25,6 +29,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A4FF32D2B9219BB00F01502 /* MonthInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthInfo.swift; sourceTree = "<group>"; };
+		0A4FF32F2B921A1A00F01502 /* MonthCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCard.swift; sourceTree = "<group>"; };
+		0A4FF3312B921E4400F01502 /* Face.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Face.swift; sourceTree = "<group>"; };
+		0A4FF3332B92271400F01502 /* MonthList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthList.swift; sourceTree = "<group>"; };
 		0A91C84E2B874F5100310C4A /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		0AB1A3BC2B84F944009E0D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0AE513782B87A153002B72F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +75,9 @@
 				0AE513782B87A153002B72F1 /* ContentView.swift */,
 				0AE5137B2B88968B002B72F1 /* MyselfView.swift */,
 				0AFBBC6A2B8F81F500ECD2FD /* CustomTabView.swift */,
+				0A4FF32F2B921A1A00F01502 /* MonthCard.swift */,
+				0A4FF3312B921E4400F01502 /* Face.swift */,
+				0A4FF3332B92271400F01502 /* MonthList.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -102,6 +113,7 @@
 				0AB1A3BC2B84F944009E0D69 /* Info.plist */,
 				69D4C8602B835D8B009A0B7C /* TheWaversApp.swift */,
 				69490C372B8F513D000411D6 /* SintomiFile.swift */,
+				0A4FF32D2B9219BB00F01502 /* MonthInfo.swift */,
 				0A95169C2B836A1C0033C208 /* Views */,
 				69D4C8642B835D8C009A0B7C /* Assets.xcassets */,
 				4E1EB6F02B8DDD0500E2D534 /* AI */,
@@ -189,15 +201,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A4FF3302B921A1A00F01502 /* MonthCard.swift in Sources */,
 				69D4C8632B835D8B009A0B7C /* SliderView.swift in Sources */,
 				69490C382B8F513D000411D6 /* SintomiFile.swift in Sources */,
 				69013CC32B8F37A300C67747 /* Buttons.swift in Sources */,
+				0A4FF32E2B9219BB00F01502 /* MonthInfo.swift in Sources */,
 				69013CC12B8DE40C00C67747 /* SyntomsNew.swift in Sources */,
 				0AE513792B87A153002B72F1 /* ContentView.swift in Sources */,
+				0A4FF3322B921E4400F01502 /* Face.swift in Sources */,
 				69D4C8612B835D8B009A0B7C /* TheWaversApp.swift in Sources */,
 				0AFBBC6B2B8F81F500ECD2FD /* CustomTabView.swift in Sources */,
 				69013CBF2B8C950D00C67747 /* TextInser.swift in Sources */,
 				0AE5137C2B88968B002B72F1 /* MyselfView.swift in Sources */,
+				0A4FF3342B92271400F01502 /* MonthList.swift in Sources */,
 				0A91C84F2B874F5100310C4A /* ProgressView.swift in Sources */,
 				4ED63B8A2B87A39000751458 /* AiTestView.swift in Sources */,
 				4E1EB6F62B8DEC9800E2D534 /* EmotionDetector.mlmodel in Sources */,
