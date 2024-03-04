@@ -28,23 +28,23 @@ struct SyntomsNew: View {
                 Image("background1")
                     .resizable()
                 
-                
                 ScrollView{
                     VStack(alignment: .leading){
-                        VStack {
-                            Spacer()
-                            HStack {
-                                Spacer()
-                                NavigationLink(destination: TextInser()) {
-                                    Text("GO ON")
-                                        .foregroundColor(.white)
-                                        .font(.title3)
-                                        .background(Color.clear)
-                                        .cornerRadius(8)
-                                }
-                                .padding(.horizontal, 20)
-                            }
-                        }
+//                        VStack {
+//                            Spacer()
+//                            HStack {
+//                                Spacer()
+//                                NavigationLink(destination: TextInser()) {
+//                                    Text("GO ON")
+//                                        .foregroundColor(.white)
+//                                        .font(.title3)
+//                                        .fontWeight(.heavy)
+//                                        .background(Color.clear)
+//                                        .cornerRadius(8)
+//                                }
+//                                .padding(.horizontal, 20)
+//                            }
+//                        }
 
                         
                         Text("What are your main \(Text("symptoms?").foregroundColor(Color.testo))")
@@ -177,6 +177,16 @@ struct SyntomsNew: View {
                         )
                     }
                 }
+                
+                NavigationLink(destination: TextInser()) {
+                    Text("GO ON")
+                        .foregroundColor(.white)
+                        .font(.title3)
+                        .fontWeight(.heavy)
+                        .background(Color.clear)
+                        .cornerRadius(8)
+                        
+                }.offset(x: 150, y: -350)
             }
         }
     }
