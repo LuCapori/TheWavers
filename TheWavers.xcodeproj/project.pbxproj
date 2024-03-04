@@ -19,7 +19,8 @@
 		4ED63B8A2B87A39000751458 /* AiTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED63B892B87A39000751458 /* AiTestView.swift */; };
 		69013CBF2B8C950D00C67747 /* TextInser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69013CBE2B8C950D00C67747 /* TextInser.swift */; };
 		69013CC12B8DE40C00C67747 /* SyntomsNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69013CC02B8DE40C00C67747 /* SyntomsNew.swift */; };
-		69013CC32B8F37A300C67747 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69013CC22B8F37A300C67747 /* Buttons.swift */; };
+		691664812B95CA33005E5762 /* PainPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691664802B95CA33005E5762 /* PainPosition.swift */; };
+		691664832B95CCF8005E5762 /* CausesTrig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691664822B95CCF8005E5762 /* CausesTrig.swift */; };
 		69490C382B8F513D000411D6 /* SintomiFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69490C372B8F513D000411D6 /* SintomiFile.swift */; };
 		6964A3062B835ED200A9BB69 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6964A3052B835ED200A9BB69 /* .gitignore */; };
 		69D4C8612B835D8B009A0B7C /* TheWaversApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4C8602B835D8B009A0B7C /* TheWaversApp.swift */; };
@@ -42,7 +43,8 @@
 		4ED63B892B87A39000751458 /* AiTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AiTestView.swift; sourceTree = "<group>"; };
 		69013CBE2B8C950D00C67747 /* TextInser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInser.swift; sourceTree = "<group>"; };
 		69013CC02B8DE40C00C67747 /* SyntomsNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntomsNew.swift; sourceTree = "<group>"; };
-		69013CC22B8F37A300C67747 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		691664802B95CA33005E5762 /* PainPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PainPosition.swift; sourceTree = "<group>"; };
+		691664822B95CCF8005E5762 /* CausesTrig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CausesTrig.swift; sourceTree = "<group>"; };
 		69490C372B8F513D000411D6 /* SintomiFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SintomiFile.swift; sourceTree = "<group>"; };
 		6964A3052B835ED200A9BB69 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		69D4C85D2B835D8B009A0B7C /* TheWavers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheWavers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,7 +70,6 @@
 			children = (
 				69013CBE2B8C950D00C67747 /* TextInser.swift */,
 				69013CC02B8DE40C00C67747 /* SyntomsNew.swift */,
-				69013CC22B8F37A300C67747 /* Buttons.swift */,
 				69D4C8622B835D8B009A0B7C /* SliderView.swift */,
 				0A91C84E2B874F5100310C4A /* ProgressView.swift */,
 				4ED63B892B87A39000751458 /* AiTestView.swift */,
@@ -113,6 +114,8 @@
 				0AB1A3BC2B84F944009E0D69 /* Info.plist */,
 				69D4C8602B835D8B009A0B7C /* TheWaversApp.swift */,
 				69490C372B8F513D000411D6 /* SintomiFile.swift */,
+				691664802B95CA33005E5762 /* PainPosition.swift */,
+				691664822B95CCF8005E5762 /* CausesTrig.swift */,
 				0A4FF32D2B9219BB00F01502 /* MonthInfo.swift */,
 				0A95169C2B836A1C0033C208 /* Views */,
 				69D4C8642B835D8C009A0B7C /* Assets.xcassets */,
@@ -204,7 +207,6 @@
 				0A4FF3302B921A1A00F01502 /* MonthCard.swift in Sources */,
 				69D4C8632B835D8B009A0B7C /* SliderView.swift in Sources */,
 				69490C382B8F513D000411D6 /* SintomiFile.swift in Sources */,
-				69013CC32B8F37A300C67747 /* Buttons.swift in Sources */,
 				0A4FF32E2B9219BB00F01502 /* MonthInfo.swift in Sources */,
 				69013CC12B8DE40C00C67747 /* SyntomsNew.swift in Sources */,
 				0AE513792B87A153002B72F1 /* ContentView.swift in Sources */,
@@ -212,7 +214,9 @@
 				69D4C8612B835D8B009A0B7C /* TheWaversApp.swift in Sources */,
 				0AFBBC6B2B8F81F500ECD2FD /* CustomTabView.swift in Sources */,
 				69013CBF2B8C950D00C67747 /* TextInser.swift in Sources */,
+				691664812B95CA33005E5762 /* PainPosition.swift in Sources */,
 				0AE5137C2B88968B002B72F1 /* MyselfView.swift in Sources */,
+				691664832B95CCF8005E5762 /* CausesTrig.swift in Sources */,
 				0A4FF3342B92271400F01502 /* MonthList.swift in Sources */,
 				0A91C84F2B874F5100310C4A /* ProgressView.swift in Sources */,
 				4ED63B8A2B87A39000751458 /* AiTestView.swift in Sources */,
