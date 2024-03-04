@@ -11,6 +11,11 @@ import EventKitUI
 struct ProgressView: View {
     @State private var selectedIndex = 0
     @State private var size = UIScreen.main.bounds.height * 0.1
+    @State private var vector = [1,2,3,4,5]
+    
+    @State private var altezza : CGFloat = 400
+    @State private var scrollValue: CGFloat = 0
+    
     
     let items = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6", "Item 7", "Item 8", "Item 9", "Item 10"]
     
@@ -49,9 +54,36 @@ struct ProgressView: View {
                     .padding()
                 }
                 
-               
+//                ScrollViewReader { proxy in
+//                    ScrollView(){
+//                        RectView()
+//                            .frame(width: 400, height: altezza);
+//                        ForEach(vector, id: \.self) { element in
+//                            RectView()
+//                                .frame(width: 400, height: 100);
+//                            
+//                            
+//                            
+//                        }.onChange(of: scrollValue, perform: {
+//                            altezza = 100
+//                        })
+//                        
+//                    }
+//                }
+                
             }
         }
+        
+    }
+}
+
+struct RectView: View {
+    
+    
+    var body: some View {
+        
+        Rectangle()
+        
     }
 }
 
