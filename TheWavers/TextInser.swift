@@ -22,7 +22,7 @@ struct TextInser: View {
         VStack{
             
             if(!isTextEntered){
-                Text("Describe what are your \n emotions \(Text("in this moment").foregroundColor(.testo1))")
+                Text("Describe what are your \n emotions \(Text("in this moment").foregroundColor(.testo))")
                     .font(.title3)
                     .multilineTextAlignment(.center)
                     .frame(maxWidth: .infinity)
@@ -43,7 +43,7 @@ struct TextInser: View {
                     self.textAnalysis(text: description)
                     UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
                 }) {
-                    Image(systemName: "arrow.right.circle").foregroundColor(.testo1)
+                    Image(systemName: "arrow.right.circle").foregroundColor(.testo)
                         .font(.system(size: 30))
                 }.padding(.top)
                 
