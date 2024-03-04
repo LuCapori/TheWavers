@@ -178,15 +178,20 @@ struct SyntomsNew: View {
                     }
                 }
                 
-                NavigationLink(destination: TextInser()) {
-                    Text("GO ON")
-                        .foregroundColor(.white)
-                        .font(.title3)
-                        .fontWeight(.heavy)
-                        .background(Color.clear)
-                        .cornerRadius(8)
-                        
-                }.offset(x: 150, y: -350)
+                ZStack {
+                    GeometryReader { reader in
+                        NavigationLink(destination: TextInser()) {
+                            Text("GO ON")
+                                .foregroundColor(.white)
+                                .font(.title3)
+                                .fontWeight(.heavy)
+                                .background(Color.clear)
+                                .cornerRadius(8)
+                                
+                        }.frame(width: reader.size.width, alignment: .trailing)
+                    }
+                }
+
             }
         }
     }
