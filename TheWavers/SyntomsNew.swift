@@ -24,8 +24,6 @@ struct SyntomsNew: View {
     
     var body: some View {
         
-        NavigationView{
-            
             ZStack{
                 Image("background1")
                     .resizable()
@@ -182,7 +180,6 @@ struct SyntomsNew: View {
             }
         }
     }
-}
 
 
 #Preview {
