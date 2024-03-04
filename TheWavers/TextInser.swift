@@ -14,7 +14,6 @@ struct TextInser: View {
     @State private var value: CGFloat = 0
     @State private var description: String = ""
     @State var emotion: String = ""
-    var title: String = "Descrive what are yout emotions in this moment"
     @State private var isTextEntered: Bool = false
 
     
