@@ -24,7 +24,10 @@ struct SyntomsNew: View {
     
     var body: some View {
         
+<<<<<<< HEAD
             
+=======
+>>>>>>> main
             ZStack{
                 Image("background1")
                     .resizable()
@@ -179,6 +182,7 @@ struct SyntomsNew: View {
                     }
                 }
                 
+<<<<<<< HEAD
                 
                 NavigationLink(destination: TextInser()) {
                     Text("GO ON")
@@ -194,6 +198,25 @@ struct SyntomsNew: View {
         }
     }
 
+=======
+                ZStack {
+                    GeometryReader { reader in
+                        NavigationLink(destination: TextInser()) {
+                            Text("GO ON")
+                                .foregroundColor(.white)
+                                .font(.title3)
+                                .fontWeight(.heavy)
+                                .background(Color.clear)
+                                .cornerRadius(8)
+                                
+                        }.frame(width: reader.size.width, alignment: .trailing)
+                    }
+                }
+
+            }
+        }
+    }
+>>>>>>> main
 
 
 #Preview {

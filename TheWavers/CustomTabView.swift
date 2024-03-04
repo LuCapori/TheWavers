@@ -49,7 +49,7 @@ struct CustomTabView: View {
                     .frame(maxWidth: .infinity)
                 }
             }
-            .frame(width:  reader.size.width, height: reader.size.height)
+            .frame(width: reader.size.width, height: reader.size.height)
         }
         
     }

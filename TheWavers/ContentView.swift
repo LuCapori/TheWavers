@@ -35,6 +35,7 @@ struct ContentView: View {
                         .frame(width: width, height: height * 0.1)
                 }
             }
+            
         }
         .navigationBarBackButtonHidden(true)
         
