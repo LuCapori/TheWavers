@@ -38,7 +38,7 @@ struct SliderView: View {
                             .opacity((scrolled || value != 0) ? 1 : 0)
                             .offset(y: sliderHeight * (1 - value))
                         
-                        NavigationLink(destination: ContentView()) {
+                        NavigationLink(destination: SyntomsNew()) {
                             Image(systemName: "arrow.right.circle")
                                 .foregroundColor(.gray)
                         }
