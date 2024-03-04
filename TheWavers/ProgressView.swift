@@ -54,6 +54,8 @@ struct ProgressView: View {
                     .padding()
                 }
                 
+                MonthList()
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
 //                ScrollViewReader { proxy in
 //                    ScrollView(){
 //                        RectView()

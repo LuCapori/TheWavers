@@ -11,7 +11,9 @@ import SwiftUI
 struct TheWaversApp: App {
     var body: some Scene {
         WindowGroup {
-            TextInser()
+//            TextInser()
+//                .preferredColorScheme(.dark)
+            ContentView()
         }
     }
 }
