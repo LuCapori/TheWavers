@@ -24,7 +24,6 @@ struct SyntomsNew: View {
     
     var body: some View {
         
-        NavigationView{
             
             ZStack{
                 Image("background1")
@@ -180,6 +179,7 @@ struct SyntomsNew: View {
                     }
                 }
                 
+                
                 NavigationLink(destination: TextInser()) {
                     Text("GO ON")
                         .foregroundColor(.white)
@@ -188,11 +188,12 @@ struct SyntomsNew: View {
                         .background(Color.clear)
                         .cornerRadius(8)
                         
-                }.offset(x: 150, y: -350)
+                }
+                .offset(x: 150, y: -380)
             }
         }
     }
-}
+
 
 
 #Preview {

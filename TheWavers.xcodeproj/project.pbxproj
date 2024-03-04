@@ -68,7 +68,6 @@
 		0A95169C2B836A1C0033C208 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				69013CBE2B8C950D00C67747 /* TextInser.swift */,
 				69013CC02B8DE40C00C67747 /* SyntomsNew.swift */,
 				69D4C8622B835D8B009A0B7C /* SliderView.swift */,
 				0A91C84E2B874F5100310C4A /* ProgressView.swift */,
@@ -79,6 +78,7 @@
 				0A4FF32F2B921A1A00F01502 /* MonthCard.swift */,
 				0A4FF3312B921E4400F01502 /* Face.swift */,
 				0A4FF3332B92271400F01502 /* MonthList.swift */,
+				69013CBE2B8C950D00C67747 /* TextInser.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -354,7 +354,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TheWavers/Preview Content\"";
-				DEVELOPMENT_TEAM = 2637N3HLSW;
+				DEVELOPMENT_TEAM = Y8K46BUAB8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TheWavers/Info.plist;
@@ -385,7 +385,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TheWavers/Preview Content\"";
-				DEVELOPMENT_TEAM = 2637N3HLSW;
+				DEVELOPMENT_TEAM = Y8K46BUAB8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TheWavers/Info.plist;
