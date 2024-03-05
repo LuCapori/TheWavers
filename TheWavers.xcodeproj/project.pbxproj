@@ -23,6 +23,14 @@
 		691664832B95CCF8005E5762 /* CausesTrig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691664822B95CCF8005E5762 /* CausesTrig.swift */; };
 		69490C382B8F513D000411D6 /* SintomiFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69490C372B8F513D000411D6 /* SintomiFile.swift */; };
 		6964A3062B835ED200A9BB69 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6964A3052B835ED200A9BB69 /* .gitignore */; };
+		69AF08592B970B1500CAF4A8 /* MotiField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AF08582B970B1500CAF4A8 /* MotiField.swift */; };
+		69AF085B2B97162000CAF4A8 /* MotField1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AF085A2B97162000CAF4A8 /* MotField1.swift */; };
+		69AF085D2B97175200CAF4A8 /* MotField2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AF085C2B97175200CAF4A8 /* MotField2.swift */; };
+		69AF085F2B9719B800CAF4A8 /* MotField3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AF085E2B9719B800CAF4A8 /* MotField3.swift */; };
+		69AF08612B971A3A00CAF4A8 /* MotField4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AF08602B971A3A00CAF4A8 /* MotField4.swift */; };
+		69AF08632B971ADC00CAF4A8 /* MotField5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AF08622B971ADC00CAF4A8 /* MotField5.swift */; };
+		69AF08662B971B5D00CAF4A8 /* MotField6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AF08652B971B5D00CAF4A8 /* MotField6.swift */; };
+		69AF08682B971BAE00CAF4A8 /* MotField7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AF08672B971BAE00CAF4A8 /* MotField7.swift */; };
 		69D4C8612B835D8B009A0B7C /* TheWaversApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4C8602B835D8B009A0B7C /* TheWaversApp.swift */; };
 		69D4C8632B835D8B009A0B7C /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4C8622B835D8B009A0B7C /* SliderView.swift */; };
 		69D4C8652B835D8C009A0B7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D4C8642B835D8C009A0B7C /* Assets.xcassets */; };
@@ -47,6 +55,14 @@
 		691664822B95CCF8005E5762 /* CausesTrig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CausesTrig.swift; sourceTree = "<group>"; };
 		69490C372B8F513D000411D6 /* SintomiFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SintomiFile.swift; sourceTree = "<group>"; };
 		6964A3052B835ED200A9BB69 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		69AF08582B970B1500CAF4A8 /* MotiField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotiField.swift; sourceTree = "<group>"; };
+		69AF085A2B97162000CAF4A8 /* MotField1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotField1.swift; sourceTree = "<group>"; };
+		69AF085C2B97175200CAF4A8 /* MotField2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotField2.swift; sourceTree = "<group>"; };
+		69AF085E2B9719B800CAF4A8 /* MotField3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotField3.swift; sourceTree = "<group>"; };
+		69AF08602B971A3A00CAF4A8 /* MotField4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotField4.swift; sourceTree = "<group>"; };
+		69AF08622B971ADC00CAF4A8 /* MotField5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotField5.swift; sourceTree = "<group>"; };
+		69AF08652B971B5D00CAF4A8 /* MotField6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotField6.swift; sourceTree = "<group>"; };
+		69AF08672B971BAE00CAF4A8 /* MotField7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotField7.swift; sourceTree = "<group>"; };
 		69D4C85D2B835D8B009A0B7C /* TheWavers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheWavers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D4C8602B835D8B009A0B7C /* TheWaversApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheWaversApp.swift; sourceTree = "<group>"; };
 		69D4C8622B835D8B009A0B7C /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
@@ -68,6 +84,7 @@
 		0A95169C2B836A1C0033C208 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				69AF08642B971B3D00CAF4A8 /* MotivationalFields */,
 				69013CC02B8DE40C00C67747 /* SyntomsNew.swift */,
 				69D4C8622B835D8B009A0B7C /* SliderView.swift */,
 				0A91C84E2B874F5100310C4A /* ProgressView.swift */,
@@ -89,6 +106,21 @@
 				4E1EB6F52B8DEC9800E2D534 /* EmotionDetector.mlmodel */,
 			);
 			path = AI;
+			sourceTree = "<group>";
+		};
+		69AF08642B971B3D00CAF4A8 /* MotivationalFields */ = {
+			isa = PBXGroup;
+			children = (
+				69AF08582B970B1500CAF4A8 /* MotiField.swift */,
+				69AF085A2B97162000CAF4A8 /* MotField1.swift */,
+				69AF085C2B97175200CAF4A8 /* MotField2.swift */,
+				69AF085E2B9719B800CAF4A8 /* MotField3.swift */,
+				69AF08602B971A3A00CAF4A8 /* MotField4.swift */,
+				69AF08622B971ADC00CAF4A8 /* MotField5.swift */,
+				69AF08652B971B5D00CAF4A8 /* MotField6.swift */,
+				69AF08672B971BAE00CAF4A8 /* MotField7.swift */,
+			);
+			name = MotivationalFields;
 			sourceTree = "<group>";
 		};
 		69D4C8542B835D8B009A0B7C = {
@@ -205,22 +237,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A4FF3302B921A1A00F01502 /* MonthCard.swift in Sources */,
+				69AF08592B970B1500CAF4A8 /* MotiField.swift in Sources */,
+				69AF08612B971A3A00CAF4A8 /* MotField4.swift in Sources */,
 				69D4C8632B835D8B009A0B7C /* SliderView.swift in Sources */,
 				69490C382B8F513D000411D6 /* SintomiFile.swift in Sources */,
 				0A4FF32E2B9219BB00F01502 /* MonthInfo.swift in Sources */,
 				69013CC12B8DE40C00C67747 /* SyntomsNew.swift in Sources */,
 				0AE513792B87A153002B72F1 /* ContentView.swift in Sources */,
 				0A4FF3322B921E4400F01502 /* Face.swift in Sources */,
+				69AF085F2B9719B800CAF4A8 /* MotField3.swift in Sources */,
+				69AF085B2B97162000CAF4A8 /* MotField1.swift in Sources */,
 				69D4C8612B835D8B009A0B7C /* TheWaversApp.swift in Sources */,
+				69AF08662B971B5D00CAF4A8 /* MotField6.swift in Sources */,
 				0AFBBC6B2B8F81F500ECD2FD /* CustomTabView.swift in Sources */,
+				69AF08682B971BAE00CAF4A8 /* MotField7.swift in Sources */,
 				69013CBF2B8C950D00C67747 /* TextInser.swift in Sources */,
 				691664812B95CA33005E5762 /* PainPosition.swift in Sources */,
 				0AE5137C2B88968B002B72F1 /* MyselfView.swift in Sources */,
 				691664832B95CCF8005E5762 /* CausesTrig.swift in Sources */,
 				0A4FF3342B92271400F01502 /* MonthList.swift in Sources */,
+				69AF085D2B97175200CAF4A8 /* MotField2.swift in Sources */,
 				0A91C84F2B874F5100310C4A /* ProgressView.swift in Sources */,
 				4ED63B8A2B87A39000751458 /* AiTestView.swift in Sources */,
 				4E1EB6F62B8DEC9800E2D534 /* EmotionDetector.mlmodel in Sources */,
+				69AF08632B971ADC00CAF4A8 /* MotField5.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
