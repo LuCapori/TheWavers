@@ -23,7 +23,7 @@ struct SyntomsNew: View {
     @State var selectedCauses: [CausesTrig] = []
     
     var body: some View {
-        
+
             ZStack{
                 Image("background1")
                     .resizable()
@@ -195,6 +195,7 @@ struct SyntomsNew: View {
             }
         }
     }
+
 
 
 #Preview {

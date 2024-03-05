@@ -10,8 +10,6 @@ import Foundation
 struct PainPosition : Identifiable {
     var id = UUID()
     var title: String
-    
-    
 }
 let painData: [PainPosition] = [
     
