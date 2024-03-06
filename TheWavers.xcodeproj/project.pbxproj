@@ -119,7 +119,6 @@
 			children = (
 				4E001B9D2B9712C60048D622 /* Login */,
 				0A74CCC12B97132A00124C2C /* OnboardingViews */,
-				69013CBE2B8C950D00C67747 /* TextInser.swift */,
 				69AF08642B971B3D00CAF4A8 /* MotivationalFields */,
 				69013CC02B8DE40C00C67747 /* SyntomsNew.swift */,
 				0AE5137B2B88968B002B72F1 /* MyselfView.swift */,
@@ -296,7 +295,6 @@
 				4E4493552B9725FC0022E106 /* ConfigurationItem.swift in Sources */,
 				4E4493572B9726D70022E106 /* TrackItem.swift in Sources */,
 				4E4493532B9714310022E106 /* LoginFirstView.swift in Sources */,
-				69013CC32B8F37A300C67747 /* Buttons.swift in Sources */,
 				0A4FF32E2B9219BB00F01502 /* MonthInfo.swift in Sources */,
 				69013CC12B8DE40C00C67747 /* SyntomsNew.swift in Sources */,
 				0AE513792B87A153002B72F1 /* ContentView.swift in Sources */,
@@ -456,7 +454,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TheWavers/Preview Content\"";
-				DEVELOPMENT_TEAM = SRL43XWPNS;
+				DEVELOPMENT_TEAM = Y8K46BUAB8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TheWavers/Info.plist;
@@ -471,7 +469,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.MassimoPaloscia.TheWavers;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LuCapori.TheWavers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -487,7 +485,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TheWavers/Preview Content\"";
-				DEVELOPMENT_TEAM = SRL43XWPNS;
+				DEVELOPMENT_TEAM = Y8K46BUAB8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TheWavers/Info.plist;
@@ -502,7 +500,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.MassimoPaloscia.TheWavers;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LuCapori.TheWavers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

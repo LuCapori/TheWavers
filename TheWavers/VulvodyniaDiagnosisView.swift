@@ -47,7 +47,7 @@ struct VulvodyniaDiagnosisView: View {
                     }
                 }.frame(width: proxy.size.width, height: proxy.size.height)
             }
-        }
+        }.navigationBarBackButtonHidden(false)
     }
     
     func saveAndModifyDate(date: Date){

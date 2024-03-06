@@ -48,7 +48,7 @@ struct GynecologicalVisitView: View {
                 }.frame(width: proxy.size.width, height: proxy.size.height)
 
             }
-        }
+        }.navigationBarBackButtonHidden(true)
     }
     
     

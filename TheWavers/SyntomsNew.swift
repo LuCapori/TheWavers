@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct SyntomsNew: View {
     
@@ -27,6 +28,7 @@ struct SyntomsNew: View {
     @State var causesDataSupport: [String] = [""]
     
     
+    let impactFeedback = UIImpactFeedbackGenerator(style: .medium)
     
     var body: some View {
 
@@ -150,8 +152,9 @@ struct SyntomsNew: View {
                         Text("Causes and triggers")  //terza lista
                             .offset(CGSize(width: 10.0, height: 10.0))
                             .font(.title3)
-                            .bold()
-                            .padding(.bottom, 20)
+                            .fontWeight(.heavy)
+                            .background(Color.clear)
+                            .cornerRadius(8)
                         
                         LazyVGrid(columns: causes, content: {
                             
@@ -213,8 +216,10 @@ struct SyntomsNew: View {
                 }
 
             }
+            
         }
     }
+}
 
 
 

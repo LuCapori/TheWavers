@@ -10,13 +10,26 @@ import SwiftData
 
 @main
 struct TheWaversApp: App {
+    @StateObject var isFirstLaunchChecker = IsFirstLaunchChecker()
     
     var body: some Scene {
         WindowGroup {
-//            TextInser()
-//                .preferredColorScheme(.dark)
-            LoginFirstView()
+            if isFirstLaunchChecker.isFirstLaunch {
+                WelcomeView()
+            } else {
+                ContentView()
+            }
         }
-        .modelContainer(for: TrackItem.self)
+    }
+}
+
+class IsFirstLaunchChecker: ObservableObject {
+    @Published var isFirstLaunch: Bool
+    
+    init() {
+        self.isFirstLaunch = UserDefaults.standard.bool(forKey: "isFirstLaunch")
+        if isFirstLaunch {
+            UserDefaults.standard.set(false, forKey: "isFirstLaunch")
+        }
     }
 }
