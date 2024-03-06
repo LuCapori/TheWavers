@@ -86,11 +86,11 @@
 			children = (
 				69AF08642B971B3D00CAF4A8 /* MotivationalFields */,
 				69013CC02B8DE40C00C67747 /* SyntomsNew.swift */,
+				0AE5137B2B88968B002B72F1 /* MyselfView.swift */,
 				69D4C8622B835D8B009A0B7C /* SliderView.swift */,
 				0A91C84E2B874F5100310C4A /* ProgressView.swift */,
 				4ED63B892B87A39000751458 /* AiTestView.swift */,
 				0AE513782B87A153002B72F1 /* ContentView.swift */,
-				0AE5137B2B88968B002B72F1 /* MyselfView.swift */,
 				0AFBBC6A2B8F81F500ECD2FD /* CustomTabView.swift */,
 				0A4FF32F2B921A1A00F01502 /* MonthCard.swift */,
 				0A4FF3312B921E4400F01502 /* Face.swift */,
