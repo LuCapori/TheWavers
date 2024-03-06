@@ -79,7 +79,7 @@ struct SyntomsNew: View {
                                         selectedSymptoms.append(sintomiFile)
                                         sintomiDataSupport.append(sintomiFile.title)
                                     }
-                                    
+                                    impactFeedback.impactOccurred()
                                     print(sintomiDataSupport)
                                 }) {
                                     ZStack {
@@ -123,6 +123,8 @@ struct SyntomsNew: View {
                                         painArraySupport.append(painPosition.title)
                                         print(painArraySupport)
                                     }
+                                    impactFeedback.impactOccurred()
+
                                     
                                 }) {
                                     ZStack {
@@ -166,7 +168,8 @@ struct SyntomsNew: View {
                                         selectedCauses.append(causesTrig)
                                         causesDataSupport.append(causesTrig.title)
                                     }
-                                    
+                                    impactFeedback.impactOccurred()
+
                                 }
                                 
                                 
