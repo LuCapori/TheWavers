@@ -11,7 +11,12 @@
 		0A4FF3302B921A1A00F01502 /* MonthCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4FF32F2B921A1A00F01502 /* MonthCard.swift */; };
 		0A4FF3322B921E4400F01502 /* Face.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4FF3312B921E4400F01502 /* Face.swift */; };
 		0A4FF3342B92271400F01502 /* MonthList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4FF3332B92271400F01502 /* MonthList.swift */; };
+		0A6506FD2B964AD000061873 /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6506FC2B964AD000061873 /* MonthView.swift */; };
+		0A74CCC32B97137A00124C2C /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A74CCC22B97137A00124C2C /* WelcomeView.swift */; };
+		0A74CCC52B972A5B00124C2C /* WelcomeView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A74CCC42B972A5B00124C2C /* WelcomeView2.swift */; };
 		0A91C84F2B874F5100310C4A /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A91C84E2B874F5100310C4A /* ProgressView.swift */; };
+		0AA8720F2B97662C006E2BF0 /* WelcomeView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8720E2B97662C006E2BF0 /* WelcomeView3.swift */; };
+		0AA872112B97736B006E2BF0 /* WelcomeView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA872102B97736B006E2BF0 /* WelcomeView4.swift */; };
 		0AE513792B87A153002B72F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE513782B87A153002B72F1 /* ContentView.swift */; };
 		0AE5137C2B88968B002B72F1 /* MyselfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5137B2B88968B002B72F1 /* MyselfView.swift */; };
 		0AFBBC6B2B8F81F500ECD2FD /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFBBC6A2B8F81F500ECD2FD /* CustomTabView.swift */; };
@@ -25,9 +30,18 @@
 		4ED63B8A2B87A39000751458 /* AiTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED63B892B87A39000751458 /* AiTestView.swift */; };
 		69013CBF2B8C950D00C67747 /* TextInser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69013CBE2B8C950D00C67747 /* TextInser.swift */; };
 		69013CC12B8DE40C00C67747 /* SyntomsNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69013CC02B8DE40C00C67747 /* SyntomsNew.swift */; };
-		69013CC32B8F37A300C67747 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69013CC22B8F37A300C67747 /* Buttons.swift */; };
+		691664812B95CA33005E5762 /* PainPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691664802B95CA33005E5762 /* PainPosition.swift */; };
+		691664832B95CCF8005E5762 /* CausesTrig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691664822B95CCF8005E5762 /* CausesTrig.swift */; };
 		69490C382B8F513D000411D6 /* SintomiFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69490C372B8F513D000411D6 /* SintomiFile.swift */; };
 		6964A3062B835ED200A9BB69 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6964A3052B835ED200A9BB69 /* .gitignore */; };
+		69AF08592B970B1500CAF4A8 /* MotiField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AF08582B970B1500CAF4A8 /* MotiField.swift */; };
+		69AF085B2B97162000CAF4A8 /* MotField1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AF085A2B97162000CAF4A8 /* MotField1.swift */; };
+		69AF085D2B97175200CAF4A8 /* MotField2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AF085C2B97175200CAF4A8 /* MotField2.swift */; };
+		69AF085F2B9719B800CAF4A8 /* MotField3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AF085E2B9719B800CAF4A8 /* MotField3.swift */; };
+		69AF08612B971A3A00CAF4A8 /* MotField4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AF08602B971A3A00CAF4A8 /* MotField4.swift */; };
+		69AF08632B971ADC00CAF4A8 /* MotField5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AF08622B971ADC00CAF4A8 /* MotField5.swift */; };
+		69AF08662B971B5D00CAF4A8 /* MotField6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AF08652B971B5D00CAF4A8 /* MotField6.swift */; };
+		69AF08682B971BAE00CAF4A8 /* MotField7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AF08672B971BAE00CAF4A8 /* MotField7.swift */; };
 		69D4C8612B835D8B009A0B7C /* TheWaversApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4C8602B835D8B009A0B7C /* TheWaversApp.swift */; };
 		69D4C8632B835D8B009A0B7C /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D4C8622B835D8B009A0B7C /* SliderView.swift */; };
 		69D4C8652B835D8C009A0B7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D4C8642B835D8C009A0B7C /* Assets.xcassets */; };
@@ -39,7 +53,12 @@
 		0A4FF32F2B921A1A00F01502 /* MonthCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCard.swift; sourceTree = "<group>"; };
 		0A4FF3312B921E4400F01502 /* Face.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Face.swift; sourceTree = "<group>"; };
 		0A4FF3332B92271400F01502 /* MonthList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthList.swift; sourceTree = "<group>"; };
+		0A6506FC2B964AD000061873 /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
+		0A74CCC22B97137A00124C2C /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		0A74CCC42B972A5B00124C2C /* WelcomeView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView2.swift; sourceTree = "<group>"; };
 		0A91C84E2B874F5100310C4A /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		0AA8720E2B97662C006E2BF0 /* WelcomeView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView3.swift; sourceTree = "<group>"; };
+		0AA872102B97736B006E2BF0 /* WelcomeView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView4.swift; sourceTree = "<group>"; };
 		0AB1A3BC2B84F944009E0D69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0AE513782B87A153002B72F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0AE5137B2B88968B002B72F1 /* MyselfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyselfView.swift; sourceTree = "<group>"; };
@@ -54,9 +73,18 @@
 		4ED63B892B87A39000751458 /* AiTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AiTestView.swift; sourceTree = "<group>"; };
 		69013CBE2B8C950D00C67747 /* TextInser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInser.swift; sourceTree = "<group>"; };
 		69013CC02B8DE40C00C67747 /* SyntomsNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntomsNew.swift; sourceTree = "<group>"; };
-		69013CC22B8F37A300C67747 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		691664802B95CA33005E5762 /* PainPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PainPosition.swift; sourceTree = "<group>"; };
+		691664822B95CCF8005E5762 /* CausesTrig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CausesTrig.swift; sourceTree = "<group>"; };
 		69490C372B8F513D000411D6 /* SintomiFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SintomiFile.swift; sourceTree = "<group>"; };
 		6964A3052B835ED200A9BB69 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		69AF08582B970B1500CAF4A8 /* MotiField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotiField.swift; sourceTree = "<group>"; };
+		69AF085A2B97162000CAF4A8 /* MotField1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotField1.swift; sourceTree = "<group>"; };
+		69AF085C2B97175200CAF4A8 /* MotField2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotField2.swift; sourceTree = "<group>"; };
+		69AF085E2B9719B800CAF4A8 /* MotField3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotField3.swift; sourceTree = "<group>"; };
+		69AF08602B971A3A00CAF4A8 /* MotField4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotField4.swift; sourceTree = "<group>"; };
+		69AF08622B971ADC00CAF4A8 /* MotField5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotField5.swift; sourceTree = "<group>"; };
+		69AF08652B971B5D00CAF4A8 /* MotField6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotField6.swift; sourceTree = "<group>"; };
+		69AF08672B971BAE00CAF4A8 /* MotField7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotField7.swift; sourceTree = "<group>"; };
 		69D4C85D2B835D8B009A0B7C /* TheWavers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheWavers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D4C8602B835D8B009A0B7C /* TheWaversApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheWaversApp.swift; sourceTree = "<group>"; };
 		69D4C8622B835D8B009A0B7C /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
@@ -75,22 +103,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A74CCC12B97132A00124C2C /* OnboardingViews */ = {
+			isa = PBXGroup;
+			children = (
+				0A74CCC22B97137A00124C2C /* WelcomeView.swift */,
+				0A74CCC42B972A5B00124C2C /* WelcomeView2.swift */,
+				0AA8720E2B97662C006E2BF0 /* WelcomeView3.swift */,
+				0AA872102B97736B006E2BF0 /* WelcomeView4.swift */,
+			);
+			path = OnboardingViews;
+			sourceTree = "<group>";
+		};
 		0A95169C2B836A1C0033C208 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				4E001B9D2B9712C60048D622 /* Login */,
+				0A74CCC12B97132A00124C2C /* OnboardingViews */,
 				69013CBE2B8C950D00C67747 /* TextInser.swift */,
+				69AF08642B971B3D00CAF4A8 /* MotivationalFields */,
 				69013CC02B8DE40C00C67747 /* SyntomsNew.swift */,
-				69013CC22B8F37A300C67747 /* Buttons.swift */,
+				0AE5137B2B88968B002B72F1 /* MyselfView.swift */,
 				69D4C8622B835D8B009A0B7C /* SliderView.swift */,
 				0A91C84E2B874F5100310C4A /* ProgressView.swift */,
 				4ED63B892B87A39000751458 /* AiTestView.swift */,
 				0AE513782B87A153002B72F1 /* ContentView.swift */,
-				0AE5137B2B88968B002B72F1 /* MyselfView.swift */,
 				0AFBBC6A2B8F81F500ECD2FD /* CustomTabView.swift */,
 				0A4FF32F2B921A1A00F01502 /* MonthCard.swift */,
 				0A4FF3312B921E4400F01502 /* Face.swift */,
 				0A4FF3332B92271400F01502 /* MonthList.swift */,
+				0A6506FC2B964AD000061873 /* MonthView.swift */,
+				69013CBE2B8C950D00C67747 /* TextInser.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -112,6 +154,21 @@
 				4E1EB6F52B8DEC9800E2D534 /* EmotionDetector.mlmodel */,
 			);
 			path = AI;
+			sourceTree = "<group>";
+		};
+		69AF08642B971B3D00CAF4A8 /* MotivationalFields */ = {
+			isa = PBXGroup;
+			children = (
+				69AF08582B970B1500CAF4A8 /* MotiField.swift */,
+				69AF085A2B97162000CAF4A8 /* MotField1.swift */,
+				69AF085C2B97175200CAF4A8 /* MotField2.swift */,
+				69AF085E2B9719B800CAF4A8 /* MotField3.swift */,
+				69AF08602B971A3A00CAF4A8 /* MotField4.swift */,
+				69AF08622B971ADC00CAF4A8 /* MotField5.swift */,
+				69AF08652B971B5D00CAF4A8 /* MotField6.swift */,
+				69AF08672B971BAE00CAF4A8 /* MotField7.swift */,
+			);
+			name = MotivationalFields;
 			sourceTree = "<group>";
 		};
 		69D4C8542B835D8B009A0B7C = {
@@ -137,6 +194,8 @@
 				0AB1A3BC2B84F944009E0D69 /* Info.plist */,
 				69D4C8602B835D8B009A0B7C /* TheWaversApp.swift */,
 				69490C372B8F513D000411D6 /* SintomiFile.swift */,
+				691664802B95CA33005E5762 /* PainPosition.swift */,
+				691664822B95CCF8005E5762 /* CausesTrig.swift */,
 				0A4FF32D2B9219BB00F01502 /* MonthInfo.swift */,
 				4E4493542B9725FC0022E106 /* ConfigurationItem.swift */,
 				4E4493562B9726D70022E106 /* TrackItem.swift */,
@@ -227,7 +286,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA872112B97736B006E2BF0 /* WelcomeView4.swift in Sources */,
 				0A4FF3302B921A1A00F01502 /* MonthCard.swift in Sources */,
+				0AA8720F2B97662C006E2BF0 /* WelcomeView3.swift in Sources */,
+				69AF08592B970B1500CAF4A8 /* MotiField.swift in Sources */,
+				69AF08612B971A3A00CAF4A8 /* MotField4.swift in Sources */,
 				69D4C8632B835D8B009A0B7C /* SliderView.swift in Sources */,
 				69490C382B8F513D000411D6 /* SintomiFile.swift in Sources */,
 				4E4493552B9725FC0022E106 /* ConfigurationItem.swift in Sources */,
@@ -238,17 +301,28 @@
 				69013CC12B8DE40C00C67747 /* SyntomsNew.swift in Sources */,
 				0AE513792B87A153002B72F1 /* ContentView.swift in Sources */,
 				0A4FF3322B921E4400F01502 /* Face.swift in Sources */,
+				0A6506FD2B964AD000061873 /* MonthView.swift in Sources */,
+				69AF085F2B9719B800CAF4A8 /* MotField3.swift in Sources */,
+				69AF085B2B97162000CAF4A8 /* MotField1.swift in Sources */,
 				69D4C8612B835D8B009A0B7C /* TheWaversApp.swift in Sources */,
+				69AF08662B971B5D00CAF4A8 /* MotField6.swift in Sources */,
 				0AFBBC6B2B8F81F500ECD2FD /* CustomTabView.swift in Sources */,
+				0A74CCC52B972A5B00124C2C /* WelcomeView2.swift in Sources */,
+				69AF08682B971BAE00CAF4A8 /* MotField7.swift in Sources */,
 				69013CBF2B8C950D00C67747 /* TextInser.swift in Sources */,
+				691664812B95CA33005E5762 /* PainPosition.swift in Sources */,
 				0AE5137C2B88968B002B72F1 /* MyselfView.swift in Sources */,
+				691664832B95CCF8005E5762 /* CausesTrig.swift in Sources */,
 				0A4FF3342B92271400F01502 /* MonthList.swift in Sources */,
 				4E8EA32D2B9869F800887DF0 /* TreatmentView.swift in Sources */,
+				69AF085D2B97175200CAF4A8 /* MotField2.swift in Sources */,
 				0A91C84F2B874F5100310C4A /* ProgressView.swift in Sources */,
 				4E4493592B972EB80022E106 /* VulvodyniaDiagnosisView.swift in Sources */,
 				4ED63B8A2B87A39000751458 /* AiTestView.swift in Sources */,
 				4E1EB6F62B8DEC9800E2D534 /* EmotionDetector.mlmodel in Sources */,
 				4E8EA3302B986E7F00887DF0 /* GynecologicalVisitView.swift in Sources */,
+				0A74CCC32B97137A00124C2C /* WelcomeView.swift in Sources */,
+				69AF08632B971ADC00CAF4A8 /* MotField5.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -30,7 +30,8 @@ struct SliderView: View {
                         .opacity(value == 0 ? 1 : 0)
                     
                     VStack {
-                        Text("\(Int(value * 10))")
+                        
+                        Text(getSliderText(value: value))
                             .font(.title3)
                             .foregroundStyle(.white)
                             .bold()
@@ -38,7 +39,7 @@ struct SliderView: View {
                             .opacity((scrolled || value != 0) ? 1 : 0)
                             .offset(y: sliderHeight * (1 - value))
                         
-                        NavigationLink(destination: ContentView()) {
+                        NavigationLink(destination: SyntomsNew()) {
                             Image(systemName: "arrow.right.circle")
                                 .foregroundColor(.gray)
                         }
@@ -60,6 +61,26 @@ struct SliderView: View {
             .background(Color.black)
             
         
+        
+    }
+    private func getSliderText(value: CGFloat) -> String {
+        let scaledValue = value * 10
+        let sliderText: String
+        
+        switch scaledValue {
+            
+        case 0...1.99: sliderText = "No Pain"
+        case 2...3.99: sliderText = "Hurts little bit"
+        case 4...5.99: sliderText = "Hurts little more"
+        case 6...7.99: sliderText = "Hurts even more"
+        case 8...9.99: sliderText = "Hurts whole lot"
+        case 10: sliderText = "Hurts worst"
+            
+        default:
+            sliderText = ""
+        }
+        
+        return sliderText
     }
 }
     
@@ -104,6 +125,7 @@ struct SliderView: View {
             }
             .frame(width: size, height: UIScreen.main.bounds.height * 0.6)
         }
+        
         
         private func calculateOffsets(proxy: GeometryProxy) -> (capsuleOffset: CGSize, circleOffset: CGSize) {
             let capsuleHeight = proxy.size.height
