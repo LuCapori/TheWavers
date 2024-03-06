@@ -21,8 +21,10 @@ struct SyntomsNew: View {
     let causes = [GridItem(.flexible()), GridItem(.flexible()),GridItem(.flexible())]
     @State var cause : [CausesTrig] = causesData
     @State var selectedCauses: [CausesTrig] = []
-    var typeOfPain1: [String]
-    var localizationOfPain1 : [String]
+    
+    @State var sintomiDataSupport: [String] = []
+    @State var painArraySupport: [String] = []
+    @State var causesDataSupport: [String] = [""]
     
     
     
@@ -67,15 +69,16 @@ struct SyntomsNew: View {
                         
                         
                         LazyVGrid(columns: symptoms, content: {
-
                             ForEach(sintomi) { sintomiFile in
                                 Button(action: {
-                                    
                                     if selectedSymptoms.contains(where: { $0.id == sintomiFile.id }) {
                                         selectedSymptoms.removeAll(where: { $0.id == sintomiFile.id })
                                     } else {
                                         selectedSymptoms.append(sintomiFile)
+                                        sintomiDataSupport.append(sintomiFile.title)
                                     }
+                                    
+                                    print(sintomiDataSupport)
                                 }) {
                                     ZStack {
                                         RoundedRectangle(cornerRadius: 100)
@@ -109,14 +112,14 @@ struct SyntomsNew: View {
                             .padding(.bottom, 20)
                         
                         LazyVGrid(columns: pains, content: {
-                            var localizationOfPain: [String] = [""]
                             ForEach(pain) { painPosition in
                                 Button(action: {
                                     if selectedPains.contains(where: { $0.id == painPosition.id }) {
                                         selectedPains.removeAll(where: { $0.id == painPosition.id })
                                     } else {
                                         selectedPains.append(painPosition)
-                                        localizationOfPain.append(painPosition.title)
+                                        painArraySupport.append(painPosition.title)
+                                        print(painArraySupport)
                                     }
                                     
                                 }) {
@@ -151,14 +154,14 @@ struct SyntomsNew: View {
                             .padding(.bottom, 20)
                         
                         LazyVGrid(columns: causes, content: {
-                            var triggersOfPain: [String] = [""]
+                            
                             ForEach(cause) { causesTrig in
                                 Button(action: {
                                     if selectedCauses.contains(where: { $0.id == causesTrig.id }) {
                                         selectedCauses.removeAll(where: { $0.id == causesTrig.id })
                                     } else {
                                         selectedCauses.append(causesTrig)
-                                        triggersOfPain.append(causesTrig.title)
+                                        causesDataSupport.append(causesTrig.title)
                                     }
                                     
                                 }
@@ -193,7 +196,9 @@ struct SyntomsNew: View {
                 ZStack {
                     GeometryReader { reader in
                         NavigationLink(destination: TextInser().onAppear(perform: {
-                            
+                            trackItemObject.typeOfPain = sintomiDataSupport
+                            trackItemObject.localizationPain = painArraySupport
+                            trackItemObject.painCauses = causesDataSupport
                         }))
                         {
                             Text("GO ON")
