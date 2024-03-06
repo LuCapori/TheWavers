@@ -36,7 +36,7 @@ struct MyselfView: View {
                             .frame(width: 160, height: 176)
                             .padding(.trailing, 10)
                             .foregroundColor(.rect)
-                        Text("Excercise ")
+                        Text("Excercises ")
                             .bold()
                             .font(.system(size: 25))
                             .foregroundColor(.white)

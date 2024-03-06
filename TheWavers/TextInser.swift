@@ -15,9 +15,12 @@ struct TextInser: View {
     @State private var description: String = ""
     @State var emotion: String = ""
     @State private var isTextEntered: Bool = false
+    
+    @State private var goToContentView = false
 
     
     var body: some View {
+        
         VStack{
             
             if(!isTextEntered){
@@ -41,10 +44,14 @@ struct TextInser: View {
                 Button(action: {
                     self.textAnalysis(text: description)
                     UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+                    self.goToContentView = true
                 }) {
+                    
                     Image(systemName: "arrow.right.circle").foregroundColor(.testo)
                         .font(.system(size: 30))
                 }.padding(.top)
+                    .background(NavigationLink("", destination: ContentView(), isActive: $goToContentView)) // Aggiunto
+
                 
             }
                 
