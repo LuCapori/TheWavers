@@ -21,6 +21,10 @@ struct SyntomsNew: View {
     let causes = [GridItem(.flexible()), GridItem(.flexible()),GridItem(.flexible())]
     @State var cause : [CausesTrig] = causesData
     @State var selectedCauses: [CausesTrig] = []
+    var typeOfPain1: [String]
+    var localizationOfPain1 : [String]
+    
+    
     
     var body: some View {
 
@@ -63,14 +67,15 @@ struct SyntomsNew: View {
                         
                         
                         LazyVGrid(columns: symptoms, content: {
+
                             ForEach(sintomi) { sintomiFile in
                                 Button(action: {
+                                    
                                     if selectedSymptoms.contains(where: { $0.id == sintomiFile.id }) {
                                         selectedSymptoms.removeAll(where: { $0.id == sintomiFile.id })
                                     } else {
                                         selectedSymptoms.append(sintomiFile)
                                     }
-                                    
                                 }) {
                                     ZStack {
                                         RoundedRectangle(cornerRadius: 100)
@@ -104,12 +109,14 @@ struct SyntomsNew: View {
                             .padding(.bottom, 20)
                         
                         LazyVGrid(columns: pains, content: {
+                            var localizationOfPain: [String] = [""]
                             ForEach(pain) { painPosition in
                                 Button(action: {
                                     if selectedPains.contains(where: { $0.id == painPosition.id }) {
                                         selectedPains.removeAll(where: { $0.id == painPosition.id })
                                     } else {
                                         selectedPains.append(painPosition)
+                                        localizationOfPain.append(painPosition.title)
                                     }
                                     
                                 }) {
@@ -144,15 +151,20 @@ struct SyntomsNew: View {
                             .padding(.bottom, 20)
                         
                         LazyVGrid(columns: causes, content: {
+                            var triggersOfPain: [String] = [""]
                             ForEach(cause) { causesTrig in
                                 Button(action: {
                                     if selectedCauses.contains(where: { $0.id == causesTrig.id }) {
                                         selectedCauses.removeAll(where: { $0.id == causesTrig.id })
                                     } else {
                                         selectedCauses.append(causesTrig)
+                                        triggersOfPain.append(causesTrig.title)
                                     }
                                     
-                                }) {
+                                }
+                                
+                                
+                                ) {
                                     ZStack {
                                         RoundedRectangle(cornerRadius: 100)
                                             .foregroundColor(selectedCauses.contains(where: { $0.id == causesTrig.id }) ? .selectedItem : Color.clear)
@@ -180,7 +192,10 @@ struct SyntomsNew: View {
                 
                 ZStack {
                     GeometryReader { reader in
-                        NavigationLink(destination: TextInser()) {
+                        NavigationLink(destination: TextInser().onAppear(perform: {
+                            
+                        }))
+                        {
                             Text("GO ON")
                                 .foregroundColor(.white)
                                 .font(.title3)

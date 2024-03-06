@@ -10,6 +10,7 @@ import SwiftData
 
 @main
 struct TheWaversApp: App {
+    
     var body: some Scene {
         WindowGroup {
 //            TextInser()

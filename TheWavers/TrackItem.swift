@@ -28,3 +28,4 @@ class TrackItem: Identifiable{
     }
     
 }
+let trackItemObject = TrackItem(scrollValue: 0, typeOfPain: ["test"], localizationPain: ["test1"], painCauses: ["test2"], dailyEmotionText: ["test2"])
