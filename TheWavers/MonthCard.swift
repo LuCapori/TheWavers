@@ -60,7 +60,7 @@ struct MonthCard: View {
                 }
             }
             .frame(width: width, height: height)
-            .background(.pink)
+            .background(.color)
             .onTapGesture {
                 withAnimation {
                     tapCallBack()

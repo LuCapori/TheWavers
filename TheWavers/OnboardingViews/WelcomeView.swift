@@ -53,7 +53,7 @@ struct WelcomeView: View {
                                 .offset(x: 0, y: calculateTotalHeight(proxy: proxy) * 0.1)
                                 .zIndex(0)
                         }
-                        .frame(width: proxy.size.width * 0.9, height: UIScreen.main.bounds.height * 0.8, alignment: .center)
+                        .frame(width: proxy.size.width * 0.9, height: UIScreen.main.bounds.height * 0.7, alignment: .center)
                     }
                     Spacer() // Spazio aggiunto per posizionare il rettangolo più vicino alla Capsule
                     
@@ -65,7 +65,7 @@ struct WelcomeView: View {
                             .background(RoundedRectangle(cornerRadius: 50).fill(.testo).frame(width: proxy.size.width * 0.6))
                     }
                     .padding(.leading, proxy.size.width * 0.3)
-                    .padding(.top, -125)
+                    .padding(.top, -proxy.size.width * 0.2)
                 }.padding(.leading)
             }
         }.navigationBarBackButtonHidden(true)

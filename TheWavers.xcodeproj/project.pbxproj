@@ -106,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				0A74CCC12B97132A00124C2C /* OnboardingViews */,
-				69013CBE2B8C950D00C67747 /* TextInser.swift */,
 				69AF08642B971B3D00CAF4A8 /* MotivationalFields */,
 				69013CC02B8DE40C00C67747 /* SyntomsNew.swift */,
 				69D4C8622B835D8B009A0B7C /* SliderView.swift */,
@@ -423,7 +422,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TheWavers/Preview Content\"";
-				DEVELOPMENT_TEAM = Y8K46BUAB8;
+				DEVELOPMENT_TEAM = 2637N3HLSW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TheWavers/Info.plist;
@@ -454,7 +453,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TheWavers/Preview Content\"";
-				DEVELOPMENT_TEAM = Y8K46BUAB8;
+				DEVELOPMENT_TEAM = 2637N3HLSW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TheWavers/Info.plist;
