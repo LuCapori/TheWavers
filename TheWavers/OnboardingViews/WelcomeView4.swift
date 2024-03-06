@@ -28,7 +28,7 @@ struct WelcomeView4: View {
                     
                     Spacer()
                     
-                    NavigationLink(destination: ContentView()) {
+                    NavigationLink(destination: LoginFirstView()) {
                         Text("START")
                             .fontWeight(.light)
                             .foregroundColor(.black)

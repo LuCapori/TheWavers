@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct GynecologicalVisitView: View {
-    
+    @AppStorage ("currentView") var currentView = 1
     @State private var dateG = Date()
     
     var body: some View {
@@ -37,6 +37,9 @@ struct GynecologicalVisitView: View {
                             saveAndModifyDate(date: dateG)
                         })) {
                             Text("START")
+                                .onTapGesture {
+                                    currentView = 2
+                                }
                                 .fontWeight(.light)
                                 .foregroundColor(.black)
                                 .padding()
