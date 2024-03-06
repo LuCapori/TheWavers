@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct TheWaversApp: App {
@@ -13,7 +14,8 @@ struct TheWaversApp: App {
         WindowGroup {
 //            TextInser()
 //                .preferredColorScheme(.dark)
-            ContentView()
+            LoginFirstView()
         }
+        .modelContainer(for: TrackItem.self)
     }
 }
