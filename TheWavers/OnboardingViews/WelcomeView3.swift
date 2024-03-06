@@ -44,7 +44,7 @@ struct WelcomeView3: View {
                         Spacer()
                         
                         
-                        Text("Keep track and be aware of progress")
+                        Text("Keep track and be aware of the progress")
                             .font(.largeTitle)
                             .foregroundColor(.testo)
                             .bold()
@@ -64,7 +64,7 @@ struct WelcomeView3: View {
                             .background(RoundedRectangle(cornerRadius: 50).fill(.testo).frame(width: proxy.size.width * 0.6))
                     }
                     //.padding(.leading, proxy.size.width * 0.3)
-                    .padding(.top, -70)
+                    .padding(.top, -proxy.size.width * 0.2)
                     
                     
                 }

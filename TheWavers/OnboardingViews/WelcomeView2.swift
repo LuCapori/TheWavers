@@ -63,7 +63,7 @@ struct WelcomeView2: View {
                             .background(RoundedRectangle(cornerRadius: 50).fill(.testo).frame(width: proxy.size.width * 0.6))
                     }
                     //.padding(.leading, proxy.size.width * 0.3)
-                    .padding(.top, -70)
+                    .padding(.top, -proxy.size.width * 0.2)
 
                     
                 }

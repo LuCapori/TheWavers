@@ -21,6 +21,12 @@
 		0AE5137C2B88968B002B72F1 /* MyselfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE5137B2B88968B002B72F1 /* MyselfView.swift */; };
 		0AFBBC6B2B8F81F500ECD2FD /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFBBC6A2B8F81F500ECD2FD /* CustomTabView.swift */; };
 		4E1EB6F62B8DEC9800E2D534 /* EmotionDetector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4E1EB6F52B8DEC9800E2D534 /* EmotionDetector.mlmodel */; };
+		4E4493532B9714310022E106 /* LoginFirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4493522B9714310022E106 /* LoginFirstView.swift */; };
+		4E4493552B9725FC0022E106 /* ConfigurationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4493542B9725FC0022E106 /* ConfigurationItem.swift */; };
+		4E4493572B9726D70022E106 /* TrackItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4493562B9726D70022E106 /* TrackItem.swift */; };
+		4E4493592B972EB80022E106 /* VulvodyniaDiagnosisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4493582B972EB80022E106 /* VulvodyniaDiagnosisView.swift */; };
+		4E8EA32D2B9869F800887DF0 /* TreatmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8EA32C2B9869F800887DF0 /* TreatmentView.swift */; };
+		4E8EA3302B986E7F00887DF0 /* GynecologicalVisitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8EA32F2B986E7F00887DF0 /* GynecologicalVisitView.swift */; };
 		4ED63B8A2B87A39000751458 /* AiTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED63B892B87A39000751458 /* AiTestView.swift */; };
 		69013CBF2B8C950D00C67747 /* TextInser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69013CBE2B8C950D00C67747 /* TextInser.swift */; };
 		69013CC12B8DE40C00C67747 /* SyntomsNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69013CC02B8DE40C00C67747 /* SyntomsNew.swift */; };
@@ -58,6 +64,12 @@
 		0AE5137B2B88968B002B72F1 /* MyselfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyselfView.swift; sourceTree = "<group>"; };
 		0AFBBC6A2B8F81F500ECD2FD /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		4E1EB6F52B8DEC9800E2D534 /* EmotionDetector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = EmotionDetector.mlmodel; sourceTree = "<group>"; };
+		4E4493522B9714310022E106 /* LoginFirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFirstView.swift; sourceTree = "<group>"; };
+		4E4493542B9725FC0022E106 /* ConfigurationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationItem.swift; sourceTree = "<group>"; };
+		4E4493562B9726D70022E106 /* TrackItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackItem.swift; sourceTree = "<group>"; };
+		4E4493582B972EB80022E106 /* VulvodyniaDiagnosisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VulvodyniaDiagnosisView.swift; sourceTree = "<group>"; };
+		4E8EA32C2B9869F800887DF0 /* TreatmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentView.swift; sourceTree = "<group>"; };
+		4E8EA32F2B986E7F00887DF0 /* GynecologicalVisitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GynecologicalVisitView.swift; sourceTree = "<group>"; };
 		4ED63B892B87A39000751458 /* AiTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AiTestView.swift; sourceTree = "<group>"; };
 		69013CBE2B8C950D00C67747 /* TextInser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInser.swift; sourceTree = "<group>"; };
 		69013CC02B8DE40C00C67747 /* SyntomsNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntomsNew.swift; sourceTree = "<group>"; };
@@ -105,8 +117,8 @@
 		0A95169C2B836A1C0033C208 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4E001B9D2B9712C60048D622 /* Login */,
 				0A74CCC12B97132A00124C2C /* OnboardingViews */,
-				69013CBE2B8C950D00C67747 /* TextInser.swift */,
 				69AF08642B971B3D00CAF4A8 /* MotivationalFields */,
 				69013CC02B8DE40C00C67747 /* SyntomsNew.swift */,
 				0AE5137B2B88968B002B72F1 /* MyselfView.swift */,
@@ -122,6 +134,17 @@
 				69013CBE2B8C950D00C67747 /* TextInser.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		4E001B9D2B9712C60048D622 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4E4493522B9714310022E106 /* LoginFirstView.swift */,
+				4E4493582B972EB80022E106 /* VulvodyniaDiagnosisView.swift */,
+				4E8EA32C2B9869F800887DF0 /* TreatmentView.swift */,
+				4E8EA32F2B986E7F00887DF0 /* GynecologicalVisitView.swift */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 		4E1EB6F02B8DDD0500E2D534 /* AI */ = {
@@ -173,6 +196,8 @@
 				691664802B95CA33005E5762 /* PainPosition.swift */,
 				691664822B95CCF8005E5762 /* CausesTrig.swift */,
 				0A4FF32D2B9219BB00F01502 /* MonthInfo.swift */,
+				4E4493542B9725FC0022E106 /* ConfigurationItem.swift */,
+				4E4493562B9726D70022E106 /* TrackItem.swift */,
 				0A95169C2B836A1C0033C208 /* Views */,
 				69D4C8642B835D8C009A0B7C /* Assets.xcassets */,
 				4E1EB6F02B8DDD0500E2D534 /* AI */,
@@ -267,6 +292,10 @@
 				69AF08612B971A3A00CAF4A8 /* MotField4.swift in Sources */,
 				69D4C8632B835D8B009A0B7C /* SliderView.swift in Sources */,
 				69490C382B8F513D000411D6 /* SintomiFile.swift in Sources */,
+				4E4493552B9725FC0022E106 /* ConfigurationItem.swift in Sources */,
+				4E4493572B9726D70022E106 /* TrackItem.swift in Sources */,
+				4E4493532B9714310022E106 /* LoginFirstView.swift in Sources */,
+				69013CC32B8F37A300C67747 /* Buttons.swift in Sources */,
 				0A4FF32E2B9219BB00F01502 /* MonthInfo.swift in Sources */,
 				69013CC12B8DE40C00C67747 /* SyntomsNew.swift in Sources */,
 				0AE513792B87A153002B72F1 /* ContentView.swift in Sources */,
@@ -284,10 +313,13 @@
 				0AE5137C2B88968B002B72F1 /* MyselfView.swift in Sources */,
 				691664832B95CCF8005E5762 /* CausesTrig.swift in Sources */,
 				0A4FF3342B92271400F01502 /* MonthList.swift in Sources */,
+				4E8EA32D2B9869F800887DF0 /* TreatmentView.swift in Sources */,
 				69AF085D2B97175200CAF4A8 /* MotField2.swift in Sources */,
 				0A91C84F2B874F5100310C4A /* ProgressView.swift in Sources */,
+				4E4493592B972EB80022E106 /* VulvodyniaDiagnosisView.swift in Sources */,
 				4ED63B8A2B87A39000751458 /* AiTestView.swift in Sources */,
 				4E1EB6F62B8DEC9800E2D534 /* EmotionDetector.mlmodel in Sources */,
+				4E8EA3302B986E7F00887DF0 /* GynecologicalVisitView.swift in Sources */,
 				0A74CCC32B97137A00124C2C /* WelcomeView.swift in Sources */,
 				69AF08632B971ADC00CAF4A8 /* MotField5.swift in Sources */,
 			);
@@ -423,7 +455,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TheWavers/Preview Content\"";
-				DEVELOPMENT_TEAM = Y8K46BUAB8;
+				DEVELOPMENT_TEAM = 2637N3HLSW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TheWavers/Info.plist;
@@ -454,7 +486,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TheWavers/Preview Content\"";
-				DEVELOPMENT_TEAM = Y8K46BUAB8;
+				DEVELOPMENT_TEAM = 2637N3HLSW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TheWavers/Info.plist;
